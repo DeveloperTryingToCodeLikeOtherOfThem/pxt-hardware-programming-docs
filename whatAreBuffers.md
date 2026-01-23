@@ -2,6 +2,8 @@
  
  In Microsoft MakeCode Arcade, the Buffer namespace is a core namespace designed for storing data precisely.  
 
+ A **Buffer** is a fixed size array of bytes.
+
  
 ## Methods
     
