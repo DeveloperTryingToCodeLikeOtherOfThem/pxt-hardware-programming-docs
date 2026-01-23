@@ -2,7 +2,9 @@
  
  In Microsoft MakeCode Arcade, the Buffer namespace is a core namespace designed for storing data precisely.  
 
- A **Buffer** is a fixed size array of bytes (8 bits). The difference between arrays and buffers come down to a fact of **precision**. Use **Buffers** for a fixed size array of bytes, but use **Arrays** for dynamic data types (numbers, strings, booleans, etc.) Arrays are **dynamic** in JavaScript or TypeScript because of default. Some languages do autotmatically have fixed size arrays by default, and some just don't support it. A buffer is never dynamic, it always makes sure all the bytes are **fixed**.
+ A **Buffer** is a fixed size array of bytes (8 bits). The difference between arrays and buffers come down to a fact of **precision**. Use **Buffers** for a fixed size array of bytes, but use **Arrays** for dynamic data types (numbers, strings, booleans, etc.) Arrays are **dynamic** 
+ 
+ In **JavaScript** and **TypeScript**, arrays automatically dynamic by default. Some languages do autotmatically have fixed size arrays by default, and some just don't support it. A buffer is never dynamic, it always makes sure all the bytes are **fixed**.
 
  A **bit** is a binary digit which uses base 2. For example, 8 bits stand for 8 binary digits.
 
