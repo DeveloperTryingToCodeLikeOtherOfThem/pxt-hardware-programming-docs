@@ -2,7 +2,7 @@
  
  In Microsoft MakeCode Arcade, the Buffer namespace is a core namespace designed for storing data precisely.  
 
- A **Buffer** is a fixed size array of bytes. The difference between arrays and buffers come down to a fact of **precision**. Use **Buffers** for a fixed size array of bytes, but use *Arrays* for dynamic data types (numbers, strings, booleans, etc.).
+ A **Buffer** is a fixed size array of bytes. The difference between arrays and buffers come down to a fact of **precision**. Use **Buffers** for a fixed size array of bytes, but use *Arrays* for dynamic data types (numbers, strings, booleans, etc.). A buffer is never dynamic, it always makes sure all the bytes are **fixed**.
 
  
 ## Methods
