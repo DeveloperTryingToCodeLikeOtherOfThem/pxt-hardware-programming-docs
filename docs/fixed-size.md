@@ -1,3 +1,2 @@
-## Fixed Sized in MakeCode Arcade
-
-In Microsoft MakeCode Arcade, fixed sized generally means a static size. For example, if you want all your bytes in the fixed array not loose, you need a fixed size for the array because then it will make sure it will never be loose and be stable in the position it was placed.
+# Fixed Size in MakeCode Arcade
+In Microsoft MakeCode Arcade, "fixed size" refers to a data structure with a static size that is determined at creation and cannot be changed later. This approach is used for data structures like Buffers to ensure predictable memory usage and performance.
