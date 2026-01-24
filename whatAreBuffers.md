@@ -16,6 +16,8 @@ Here is an example how they are connected to each other.
 
 [Battery +] -----( SWITCH )-----[Light]-----[Battery -]
 
+Binary math came to use electricity because engineers realized electrical switches naturally implement Boolean logic.
+
  
 ## Methods
     
