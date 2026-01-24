@@ -18,6 +18,7 @@ Here is an example how they are connected to each other.
 
 Binary math came to use electricity because engineers realized electrical switches naturally implement Boolean logic.
 
+The person who created all of the binary system is [Georg Boole](https://en.wikipedia.org/wiki/George_Boole)
  
 ## Methods
     
