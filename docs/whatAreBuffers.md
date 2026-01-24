@@ -18,7 +18,7 @@ Here is an example how they are connected to each other.
 
 Binary math came to use electricity because engineers realized electrical switches naturally implement Boolean logic.
 
-The person who created the boolean system is [Gottfried Wilhelm Leibniz(https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz)]
+The person who created the boolean system is [Gottfried Wilhelm Leibniz](https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz)
 The person who created boolean alegebra is [Georg Boole](https://en.wikipedia.org/wiki/George_Boole)
  
 ## Methods
