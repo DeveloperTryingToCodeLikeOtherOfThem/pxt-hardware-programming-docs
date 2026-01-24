@@ -11,6 +11,11 @@
  The reason why buffers read by bytes instead of simple values because the computer understands bits (0, 1), which represents on and off in the computer architecture. 
 * 0 = off
 * 1 = on
+
+Here is an example how they are connected to each other.
+
+[Battery +] -----( SWITCH )-----[Light]-----[Battery -]
+
  
 ## Methods
     
