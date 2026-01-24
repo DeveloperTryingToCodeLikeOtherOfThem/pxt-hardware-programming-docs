@@ -9,8 +9,8 @@
  A **bit** is a binary digit which uses base 2. For example, 8 bits stand for 8 binary digits. In base 2, we have only zeroes and ones because we have only 2 digits.
 
  The reason why buffers read by bytes instead of simple values because the computer understands bits (0, 1), which represents on and off in the computer architecture. 
-* 0 represents off
-* 1 represents on
+* 0 = off
+* 1 = on
  
 ## Methods
     
