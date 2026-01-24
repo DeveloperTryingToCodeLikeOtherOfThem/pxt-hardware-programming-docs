@@ -12,6 +12,8 @@
 * 0 = off
 * 1 = on
 
+A bit is a **logical state**.
+
 Here is an example how they are connected to each other.
 
 [Battery +] -----( SWITCH )-----[Light]-----[Battery -]
