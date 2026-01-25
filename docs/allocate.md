@@ -1,3 +1,3 @@
 ## Allocate
 
-An Allocate is distribute (resources or duties) for a particular purpose.
+Allocate is to distribute resources or duties for a particular purpose.
