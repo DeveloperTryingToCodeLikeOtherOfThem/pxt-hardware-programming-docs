@@ -1,3 +1,3 @@
 ## What is this repository about
 
-This repository is meant for explaining how to code the engine in Microsoft MakeCode Arcade.
+This repository is meant for explaining how to code the engine in Microsoft MakeCode Arcade. This package does **NOT** connect to MakeCode's offical runtime docs, it is for local and to access the docs, you view the documentation here by clicking doc and seeing any of the .md files or go to your local MakeCode website and searching for this teaching extension and then view the files in the bottom of the explorer tab. **Note that this is only meant for users using the JavaScript tab because it is not built for blocks to view it and it is unable to work for now anyways.**
