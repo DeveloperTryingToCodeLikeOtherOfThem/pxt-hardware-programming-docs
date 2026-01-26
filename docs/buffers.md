@@ -37,4 +37,6 @@ The other person who created boolean alegebra is [Georg Boole](https://en.wikipe
 
 * The Buffer.write(dstOffset: number, src: Buffer) method is designed to write contents of the buffer merged into the current buffer (the buffer your using) 
 
-* The Buffer.isReadOnly() method is designed to read if the buffer cannot be modified, otherwise it returns false 
+* The Buffer.isReadOnly() method is designed to read if the buffer cannot be modified, otherwise it returns false
+
+* The Buffer.length method is designed to return the total area of the buffer
