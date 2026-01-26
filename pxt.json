@@ -1,0 +1,20 @@
+{
+    "name": "pxt-hardware-programming-docs",
+    "description": "A documentation teaching core runtime components and methods/properties.",
+    "dependencies": {
+        "device": "*"
+    },
+    "files": [
+        "main.ts",
+        "README.md",
+        "docs/buffers.md",
+        "docs/allocate.md",
+        "docs/binary.md",
+        "docs/unary.md",
+        "docs/decoder.md",
+        "docs/fixed-size.md",
+        "docs/fixedArray.md"
+    ],
+    "preferredEditor": "tsprj",
+    "languageRestriction": "javascript-only"
+}
