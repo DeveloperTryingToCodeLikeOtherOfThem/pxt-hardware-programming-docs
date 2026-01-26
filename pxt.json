@@ -13,7 +13,8 @@
         "docs/unary.md",
         "docs/decoder.md",
         "docs/fixed-size.md",
-        "docs/fixedArray.md"
+        "docs/fixedArray.md",
+        "docs/hardware.md"
     ],
     "preferredEditor": "tsprj",
     "languageRestriction": "javascript-only"
