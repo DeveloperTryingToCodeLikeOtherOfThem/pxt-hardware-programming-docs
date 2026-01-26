@@ -12,7 +12,7 @@
 * 0 = off
 * 1 = on
 
-Here is an example how they are connected to each other.
+Here is an example showing how they are connected to each other.
 
 [Battery +] -----( SWITCH )-----[Light]-----[Battery -]
 
