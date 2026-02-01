@@ -1,4 +1,4 @@
 ## Downloading files in Microsoft MakeCode Arcade
 
 To download files in MakeCode Arcade, it is simple, just click the download button in the bottom-center corner which is between the project's title bar and Github's logo.
-All files are downloaded in the whole project itself, **not** by **indepent files**.
+All files are downloaded in the whole project itself, **not** by **indepent files**. The file's data type is a .mdck file.
