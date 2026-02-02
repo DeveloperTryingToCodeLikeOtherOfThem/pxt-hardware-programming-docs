@@ -20,6 +20,10 @@ Binary math came to use electricity because engineers realized electrical switch
 
 The person who created the boolean system is [Gottfried Wilhelm Leibniz](https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz).
 The other person who created boolean alegebra is [Georg Boole](https://en.wikipedia.org/wiki/George_Boole).
+
+## Little Endian (LE) and Big Endian (BE)
+Little Endian groups bytes by the least significant byte at the lowest address.
+Big Endian stores the most significant byte at the lowest address, it is meant for human readability.
  
 ## Methods
     
