@@ -6,6 +6,3 @@ When the file is done downloading, the compiler will show a picture frame of the
 This is mainly because it helps to easier identify that current frame that is happening to the game to make other users
 to understand what is cool in this project. This is more like an ad showing something intrestnig about what the game is about
 in that current frame.
-
-
-The project files are actually stored as data in the browser's indexed data store. The project data is keyed from an identfier associated with the project and the [MakeCode](@homeurl@) web site URL. The data store doesn't keep the project data forever. It's subject to removal by a user when they decide to clear the browser's cache and temporary files. Rules for how browsers clear should their cache and data store are specified by [W3C Clear Site Data](https://www.w3.org/TR/clear-site-data/) policy.
