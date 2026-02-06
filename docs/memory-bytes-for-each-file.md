@@ -1,7 +1,4 @@
-## How many bytes is enough for creating the file unit precisely
+## How Many Bytes Does a File Need?
 
-To know how many memory is enough for that file, you need  to think how many charcaters or punctuation is inserted in the document like word
-that needs to be stored in the file you were writing. For instance, think of it like how many charcaters are there in the, 3 characters right because
-they are t, h, and e that forms the whole word "the". The same thing for computers, they read by how many digits or charcaters that form the whole word
-in the end. Use regular bytes for very simple projects like for example, the file has only a 160 * 120 screen in total are and store all the bits per pixel
-filling the screen by doing this because it is simple, it is just storing individual bits into the screen.
+To determine how much memory a file requires, you need to consider its contents. For example, in a text file, the size is determined by the number of characters (including spaces and punctuation). Each character typically requires one or more bytes of storage.
+For other types of files, like images, the calculation is different. For an image on a 160x120 pixel screen, the total memory needed would be the total number of pixels (160 * 120) multiplied by the number of bytes required to store the color of each pixel (which depends on the bits per pixel, or BPP).
