@@ -1,6 +1,6 @@
 # This workflow will build and push a Docker container image to Amazon ECR
 # and deploy a new task definition to Amazon ECS when there is a push to the "main" branch.
-
+git push
 name: Deploy to Amazon ECS
 
 on:
