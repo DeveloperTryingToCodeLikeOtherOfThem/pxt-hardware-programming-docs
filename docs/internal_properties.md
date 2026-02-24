@@ -1,15 +1,5 @@
-## internal property components
-
-There are internal property compenents which are made by the MakeCode engine's runtime. An internal property means
-something that is private, not avaliable in the public APIs you can see. There are some properties where you can 
-access even if they are private by looking at a file, and then see what properties exist there. The properties
-that are truly private have a private modifier. Another one is the protected modifier. 
-
-You can still access protected properites by defining a class and extend the class that has the variables you want to keep. 
-Then finally, use the this keyword to access the property. Also, this is the same for accessing methods. 
-
-You might also sometimes see some properties that are public but you cannot find them. 
-This is because there is an underscore preventing anyone to see it in the option menu. The
-best wais to find the variable is by looking for the file that has the implementation of it, 
-and then write the property down in your script editor to access it. The other option is to paste the 
-property directly into the code, in case if you are unsure if you spelled it right.
+## Internal Properties
+Internal properties are components created by the MakeCode engine's runtime. An internal property is private and not available in the public APIs.
+You can sometimes access private properties by inspecting the source files to see what properties exist. Properties that are intended to be strictly private are marked with the `private` modifier. Others might use the `protected` modifier.
+You can access `protected` properties by defining a new class that `extends` the class containing them. Then, you can use the `this` keyword to access the property. This approach also works for accessing protected methods.
+You might also encounter public properties that are not visible in the editor's block menu. This is often because their names are prefixed with an underscore (`_`), which hides them from the UI. The best way to find and use such a property is to locate its implementation in the source files and then use its name directly in your script. Alternatively, you can paste the property name into your code if you are sure about the spelling.
