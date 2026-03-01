@@ -1,1 +1,1 @@
-The helpers._getFactoryInstance(): any method allows to get a template of that data type.
+The `helpers._getFactoryInstance(): any` method returns a template for a given data type.
