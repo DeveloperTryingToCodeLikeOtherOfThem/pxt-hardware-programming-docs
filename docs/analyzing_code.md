@@ -1,6 +1,6 @@
 ## Analyzing code
 
-To analyze code like reading an entire engine wrapper full of management of sprites, physics, controlling, etc.,
+To analyze code (reading an entire engine wrapper full of management of sprites, physics, controlling, etc.),
 you first must understand how the computer processes that data to the program and how it runs internally before
 coding that script in your own.
 
