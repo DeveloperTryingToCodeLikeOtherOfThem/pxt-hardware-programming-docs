@@ -1,5 +1,5 @@
 The `helpers._getFactoryInstance(): any` method returns a template for a given data type.
-Here is an example of how to use the method correctly.
+Here is an example of using the method correctly.
 ``` ts
   namespace helpers {
     export function getRenderImageByName (name: string) {
