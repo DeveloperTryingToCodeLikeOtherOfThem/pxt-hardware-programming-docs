@@ -2,7 +2,7 @@ The `helpers._getFactoryInstance(): any` method returns a template for a given d
 Here is an example of using the method correctly.
 ``` ts
   namespace helpers {
-    export function getRenderImageByName (name: string) {
+    export function getRenderImageByName (name: string): Image {
         return _getFactoryInstance("image", name);
     }
    }
