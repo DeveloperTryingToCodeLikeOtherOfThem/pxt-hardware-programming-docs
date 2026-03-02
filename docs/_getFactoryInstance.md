@@ -9,7 +9,7 @@ Here is an example of using the method correctly.
 
 //% helper=getRenderImageByName
 function renderImage(lits: any, ...args: any[]): Image{
- return null // were returning null because it is meant to have nothing returned before you call the method.
+ return null // were returning null because it is meant to have nothing returned before you call the method
 }
 ```
 
