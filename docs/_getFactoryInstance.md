@@ -5,7 +5,7 @@ Here is an example of how to use the method correctly.
     export function getRenderImageByName (name: string) {
         return _getFactoryInstance("image", name);
     }
-}
+   }
 
 //% helper=getRenderImageByName
 function renderImage(lits: any, ...args: any[]) {
