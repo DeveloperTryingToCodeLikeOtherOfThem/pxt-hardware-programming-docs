@@ -1,6 +1,6 @@
 ## Using Third Party in Microsoft MakeCode Arcade
 
-Third Party means users that are outside of the repository or organization that have no permission to edit the repository or orginization.
+Third Party means users that are outside of the repository or organization have no permission to edit the repository or organization.
 
 Which this means is that Third Party are for users that are unrelated to that organization or repository.
 They just help editing the repository or organization to make it better.
