@@ -14,7 +14,10 @@
         "docs/decoder.md",
         "docs/fixed-size.md",
         "docs/fixedArray.md",
-        "docs/hardware.md"
+        "docs/hardware.md",
+        "docs/analyzing_code.md",
+        "docs/binRange.md",
+        "docs/bpp.md"
     ],
     "preferredEditor": "tsprj",
     "languageRestriction": "javascript-only"
