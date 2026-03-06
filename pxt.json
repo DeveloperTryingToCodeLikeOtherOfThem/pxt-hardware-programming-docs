@@ -33,7 +33,8 @@
         "docs/history-of-bytes.md",
         "docs/string.md",
         "docs/mixed-arrays.md",
-        "docs/reading-makecode-docs-clearly.md"
+        "docs/reading-makecode-docs-clearly.md",
+        "What_is_this_repository_about.docx"
     ],
     "preferredEditor": "tsprj",
     "languageRestriction": "javascript-only"
