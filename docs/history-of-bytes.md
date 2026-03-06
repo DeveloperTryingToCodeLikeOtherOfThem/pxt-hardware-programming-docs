@@ -9,6 +9,7 @@ Lettters (A-Z): combining a zone row (12 or 11) with a numeric row.
 
 Here is an example of how it is done.
 A: punch 12 + 1
+
 B: punch 12 + 2
 
 Another way to understand this better by finding the ranges for each zone. If the zone is 12, the range would be ranged from A-I.
