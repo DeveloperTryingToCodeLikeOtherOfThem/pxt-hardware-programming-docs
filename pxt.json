@@ -30,7 +30,9 @@
         "docs/monochrome.md",
         "docs/ways-to-be-like-a-pro.md",
         "docs/serial-and-parallel.md",
-        "docs/history-of-bytes.md"
+        "docs/history-of-bytes.md",
+        "docs/string.md",
+        "docs/mixed-arrays.md"
     ],
     "preferredEditor": "tsprj",
     "languageRestriction": "javascript-only"
