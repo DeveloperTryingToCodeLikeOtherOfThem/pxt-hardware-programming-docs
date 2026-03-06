@@ -8,6 +8,7 @@ to numeric rows. For example, punching 1 row matches to punching 1 row only.
 Lettters (A-Z): combining a zone row (12 or 11) with a numeric row.
 
 Here is an example of how it is done.
+
 A: punch 12 + 1
 
 B: punch 12 + 2
