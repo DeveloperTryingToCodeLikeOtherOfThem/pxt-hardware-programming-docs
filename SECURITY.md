@@ -5,7 +5,7 @@ If you believe you have found a security vulnerability in this repository, pleas
 ## Reporting Security Issues
 
 **Do not report security vulnerabilities through public GitHub issues.**
-
+ 
 Instead, contact me at: your-email@example.com (or use a private GitHub Discussion/issue template).
 
 Include as much information as possible:
