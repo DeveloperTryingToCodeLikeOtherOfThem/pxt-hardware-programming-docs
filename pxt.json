@@ -29,8 +29,7 @@
         "docs/internal_properties.md",
         "docs/monochrome.md",
         "docs/ways-to-be-like-a-pro.md",
-        "docs/serial-and-parallel.md",
-        "docs/limit_of_offsets_for_setNumber.md"
+        "docs/serial-and-parallel.md"
     ],
     "preferredEditor": "tsprj",
     "languageRestriction": "javascript-only"
