@@ -23,7 +23,7 @@ MakeCode never made the version release back to an older version. It is still sa
 
 Most of the users might cannot even access this repository in Microsoft MakeCode right now anyways, the only way to see is by seeing this respoitory instead. 
 
-Here is what you might see.
+Here is something that you might see.
 
 ![Screen recording 2026-03-06 12 22 32 AM](https://github.com/user-attachments/assets/a26fdcc6-121f-4476-b1da-6994b78ba431)
 
