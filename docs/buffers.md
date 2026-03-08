@@ -47,4 +47,4 @@ Big Endian stores the most significant byte at the lowest address, it is meant f
 
 * The Buffer.isReadOnly() method reads if the buffer cannot be modified, otherwise it returns false
 
-* The Buffer.length method returns the total area of the buffer
+* The Buffer.length property returns the total area of the buffer
