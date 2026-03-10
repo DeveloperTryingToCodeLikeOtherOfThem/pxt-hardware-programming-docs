@@ -35,7 +35,8 @@
         "docs/string.md",
         "docs/mixed-arrays.md",
         "docs/reading-makecode-docs-clearly.md",
-        "docs/twoCollons.md"
+        "docs/twoCollons.md",
+        "docs/raw_infinite_for_loops.md"
     ],
     "public": true,
     "preferredEditor": "tsprj",
