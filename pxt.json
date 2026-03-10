@@ -8,6 +8,7 @@
         "main.ts",
         "README.md",
         "test.ts",
+        "LICENSE.txt",
         "docs/buffers.md",
         "docs/allocate.md",
         "docs/binary.md",
