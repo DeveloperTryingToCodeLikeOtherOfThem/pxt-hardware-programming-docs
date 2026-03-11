@@ -24,3 +24,6 @@ knowing how to code correctly. If this is your first time for coding or using th
 For more information about Fixed Point Math with 8 fractional bits after the decimal point (Fx8), please read this file.
 https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/main/docs/fixed_point.md
 If the link does not work, **look for the fixed_point md (MarkDown) file in the files tab.**
+Another way to find the link is by clicking the link, and then after the error image shows:
+<img width="377" height="111" alt="image" src="https://github.com/user-attachments/assets/4f39e7ff-953d-4532-9073-4e45318e12c6" />,
+click on the underlined message (the underline is underlined in blue) showing "reloading the page."
