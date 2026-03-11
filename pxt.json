@@ -38,7 +38,9 @@
         "docs/mixed-arrays.md",
         "docs/reading-makecode-docs-clearly.md",
         "docs/twoCollons.md",
-        "docs/raw_infinite_for_loops.md"
+        "docs/raw_infinite_for_loops.md",
+        "docs/underscore_public_properties_and_methods.md",
+        "docs/buffers_vs_arrays.md"
     ],
     "public": true,
     "preferredEditor": "tsprj",
