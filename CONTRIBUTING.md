@@ -6,4 +6,4 @@ When contributing to this repository, please check if you have all of these 3 re
 2. Make sure there are not many mistakes, just minor issues or a few.
 3. Likewise, make sure you do all of these so then you get selected to contribute.
  
-If you have been selected to be a collabrator, **plase make sure to still follow these rules even though now you associate with this repository.**
+If you have been selected to be a collabrator, **please make sure to still follow these rules even though now you associate with this repository.**
