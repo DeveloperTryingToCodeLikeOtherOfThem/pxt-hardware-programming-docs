@@ -3,7 +3,7 @@
     "description": "A documentation teaching core runtime components and methods/properties.",
     "version": "2.2.6,
      "license": "MIT",
-    "files": [
+    "files": [ 
         "main.ts",
         "README.md",
         "test.ts",
