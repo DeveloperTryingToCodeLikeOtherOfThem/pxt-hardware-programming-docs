@@ -1,7 +1,7 @@
 {
     "name": "pxt-hardware-programming-docs",
     "description": "A documentation teaching core runtime components and methods/properties.",
-    "version": "2.2.7",
+    "version": "2.2.8",
      "license": "MIT",
     "files": [ 
         "main.ts",
@@ -48,7 +48,6 @@
     "languageRestriction": "javascript-only",
      "supportedTargets": [
          "arcade", 
-         "microbit", 
-         "maker"
+         "microbit"
      ]
 }
