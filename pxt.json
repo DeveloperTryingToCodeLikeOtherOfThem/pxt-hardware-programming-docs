@@ -45,7 +45,6 @@
     ],
     "public": true,
     "preferredEditor": "tsprj",
-    "languageRestriction": "javascript-only",
      "supportedTargets": [
          "arcade", 
          "microbit"
