@@ -3,7 +3,7 @@
 ``` ts
 control._onCodeStop(args: any): void;
 ```
-is a shutdown hook used by the PXT runtime, similar to _onCodeStop.
+A shutdown hook used by the PXT runtime, similar to _onCodeStop.
 It fires after the main program fiber finishes, right before MakeCode stops everything.
 
 ## See also
