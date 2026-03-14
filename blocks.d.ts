@@ -1,3 +1,4 @@
+// unsupported 
 declare namespace control {
   //% help=github:pxt-hardware-programming-docs/docs/_onCodeStart
   function _onCodeStart(args: any): void;
