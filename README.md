@@ -14,7 +14,7 @@ and now **not** supported in any PXT target for documentation. It is now a repos
 because there were many cached issues and limitations of how MakeCode parses and stores huge packaged files. So now if you want to view this repository,you view it **only** here.
 
 ## Support
-This extension **does not** work in any MakeCode editor. 
+This extension **does not** work in any MakeCode editor because of the issues that were encountered in pxt.json. 
 
 ## ~~Procedures To Be Aware Of~~
 ~~Updating Could Destroy Your Imported Extension: **Warning**, do not refresh the release of the package because it could break multiple files, so just avoid updating the release. The safest way to
