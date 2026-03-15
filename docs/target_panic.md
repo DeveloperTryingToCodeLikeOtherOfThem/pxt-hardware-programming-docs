@@ -11,3 +11,6 @@ extern "C" void target_panic(int code) {
     exit(1);
 }
 ```
+
+The function will be printed in the problems panel because it is calling
+the diagnosed message function.
