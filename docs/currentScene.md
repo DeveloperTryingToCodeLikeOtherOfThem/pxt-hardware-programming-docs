@@ -9,3 +9,7 @@ Manages scenes in the game. The current scene is the active scene that is runnin
  the scene object (`scene.Scene`).
 
  ## Example
+
+ ``` ts
+   game.currentScene().allSprites;
+ ```
