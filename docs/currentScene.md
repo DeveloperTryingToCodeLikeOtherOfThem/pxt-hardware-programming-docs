@@ -28,7 +28,7 @@ Manages scenes in the game. The current scene is the active scene that is runnin
     . . 4 4 f 4 4 5 5 4 4 f 4 4 . .
     . . . . . f f f f f f . . . . .
     . . . . . f f . . f f . . . . .
-`), SpriteKind.Player)
+`, SpriteKind.Player)
    const scene2 = game.currentScene();
    const physicsEngine = scene.physicsEngine;
    physicsEngine.addSprite(sprite);
