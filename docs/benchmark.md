@@ -1,5 +1,5 @@
 ## benchmark
-A test that measures how fast something runs.
+A test that measures how fast something runs in microseconds.
 
 ## Parameters
 
