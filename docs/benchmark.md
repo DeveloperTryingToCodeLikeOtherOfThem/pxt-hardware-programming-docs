@@ -3,7 +3,7 @@ A test that measures how fast something runs.
 
 ## Parameters
 
-* f: the handler to run the containing code you want to measure.
+* f: the handler to run the containing code for measuring.
 
 ## Example
 
