@@ -8,10 +8,12 @@ The function does not belong to only one PXT target, it exists in all PXT target
 
 ## Example 
 
+In TypeScript:
 ``` ts
    control.dmesg("Hello");
 ```
 
+In C++:
 ``` cpp
   DMESG("HELLO!")
 ```
