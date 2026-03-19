@@ -1,4 +1,6 @@
 The resource that I recommend for helping you to understand
 about Developer Tools by watching this video right here.
 
-[video](`<iframe width="746" height="421" src="https://www.youtube.com/embed/t1c5tNPpXjs" title="Fun &amp; powerful: Intro to Chrome DevTools #DevToolsTips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`)
+[Developers Tool](https://www.youtube.com/watch?v=t1c5tNPpXjs&embeds_referring_euri=https%3A%2F%2Fdeveloper.chrome.com%2F&embeds_referring_origin=https%3A%2F%2Fdeveloper.chrome.com&source_ve_path=Mjg2NjY)
+
+Copyrights all Reserved
