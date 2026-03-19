@@ -13,3 +13,7 @@ Counter: a number that increases every time an event occurs.
   control.enablePerfCounter("Hello!")
   control.dmesgPerfCounters(); // prints all performance counters into the debugging buffer.
 ```
+
+## See also
+
+[DMESG](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/master/docs/dmesg.md)
