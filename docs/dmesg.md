@@ -1,6 +1,8 @@
 ## dmesg
 
-DMESG (**short for diagnostic messages that is an internal debugging tool**) are communication log channels.
+DMESG (**short for diagnostic message is an internal debugging tool**) is a communication log channel.
+
+## LOG vs DMESG
 DMESG and LOG are totally different logging tools because DMESG is a system-level debugging tool (**refers to as I mentioned previously**), but
 log is a high-level function used to print your own messages. 
 
