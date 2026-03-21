@@ -1,7 +1,7 @@
 # Referenced from triage on pxt-arcade
 
 name: "Triage"
-"on":
+on:
   issues:
     # names: # Label filtering applied via job conditions
     # - ai-triage # Label filtering applied via job conditions
