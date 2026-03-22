@@ -10,7 +10,7 @@ as a string.
 
 ## Example
 
-If your project is labeled "Chase the Pizza", it will return the output as the project's name (Chase the Pizza.)
+If your project is labeled "Chase the Pizza", it will return the output as the project's name (Chase the Pizza).
 ``` ts
     console.log(control.programName());
 ```
