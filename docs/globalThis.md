@@ -11,4 +11,4 @@ it is the monaco editor and JavaScript doing that.
 
 Here is an image of the conflict that happened.
 
-<img width="501" height="113" alt="image" src="https://github.com/user-attachments/assets/2b0a3449-4935-4a6f-b275-ea92674004a1" />
+<img width="501" height="113" alt="image" src="https://github.com/user-attachments/assets/d92a29c0-23e5-4705-94e6-6f4306521181" />
