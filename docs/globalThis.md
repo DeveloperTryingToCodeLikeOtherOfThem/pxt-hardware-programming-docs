@@ -2,7 +2,11 @@
 
 MakeCode unsupports the globalThis property though. This is because the runtime's virtual table is static, 
 
-not dynamic, which affects this and a lot of other builtin global properties, methods, etc. used in **typescript** that 
+not dynamic, which affects this and a lot of other builtin global properties, methods, etc. used in **typescript** that
+
+It is very similar to think of as pxsim. This is because pxsim is a global module for
+PXT.
+
 
 are **not** supported.
 
