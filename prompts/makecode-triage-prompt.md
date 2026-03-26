@@ -94,7 +94,7 @@ When searching for code, consider these common file patterns:
 - `sim/` - Shared simulator
 
   # Microbit
-  // still working on this part
+  
 
 ### MakeCode-Specific Considerations
 
