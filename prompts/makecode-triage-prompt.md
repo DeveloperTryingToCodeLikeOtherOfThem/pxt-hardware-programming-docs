@@ -2,7 +2,7 @@
 
 Perform comprehensive triage for issue #${{ github.event.issue.number }} in the **DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs** repository using the imported generic triage agent.
 
-## MakeCode Arcade Context
+## MakeCode Context
 
 You are triaging issues for **Microsoft MakeCode**, a multi-repository development workspace consisting of:
 - **pxt-arcade**: Arcade-specific target configuration, extensions, and documentation
