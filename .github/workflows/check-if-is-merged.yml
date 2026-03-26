@@ -42,7 +42,7 @@ jobs:
               return JSON.stringify({ is_merged_pr: false, pr_head_sha: '' });
             }
 
-            core.info(`Found merged PR head SHA: ${mergedPr.head.sha}`);
+            core.info(`Merged PR head SHA exists at: ${mergedPr.head.sha}`);
             return JSON.stringify({ is_merged_pr: true, pr_head_sha: mergedPr.head.sha });
 
       - name: Parse outputs
