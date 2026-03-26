@@ -38,7 +38,7 @@ run-name: "Triage"
 jobs:
   activation:
     if: github.event.label.name == 'ai-triage'
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     outputs:
@@ -75,35 +75,35 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            # const issue = context.payload.issue || {};
-            # const title = issue.title || "(no title)";
-            # const body = issue.body || "(no body)";
+            const issue = context.payload.issue || {};
+            const title = issue.title || "(no title)";
+            const body = issue.body || "(no body)";
 
             # // Lightweight, deterministic "analysis" that you can replace with real AI later.
             # // Create a short excerpt and a simple checklist of things to check.
-            # const excerpt = body.split("\n").slice(0, 10).join("\n").slice(0, 1200);
-            # const lines = [];
-            # lines.push("**AI Triage Summary**");
-            # lines.push("");
-            # lines.push(`**Title:** ${title}`);
-            # lines.push("");
-            # lines.push("**Excerpt:**");
-            # lines.push(excerpt || "(empty)");
-            # lines.push("");
-            # lines.push("**Quick checks:**");
-            # lines.push("- Has reproduction steps? " + (body.match(/(steps to reproduce|repro|reproduce)/i) ? "Yes" : "No"));
-            # lines.push("- Mentions hardware or board? " + (body.match(/(board|hardware|pin|gpio|i2c|spi|uart)/i) ? "Yes" : "No"));
-            # lines.push("- Looks like a bug report or feature request? " + (body.length > 200 ? "Likely bug/long report" : "Short / unclear"));
-            # lines.push("");
-            # lines.push("*This comment was generated automatically by the repository triage workflow.*");
+            const excerpt = body.split("\n").slice(0, 10).join("\n").slice(0, 1200);
+            const lines = [];
+            lines.push("**Recommendation for Triage**");
+            lines.push("");
+            lines.push(`**Title:** ${title}`);
+            lines.push("");
+            lines.push("**Excerpt:**");
+            lines.push(excerpt || "(empty)");
+            lines.push("");
+            lines.push("**Quick checks:**");
+            lines.push("- Has reproduction steps? " + (body.match(/(steps to reproduce|repro|reproduce)/i) ? "Yes" : "No"));
+            lines.push("- Mentions hardware or board? " + (body.match(/(board|hardware|pin|gpio|i2c|spi|uart)/i) ? "Yes" : "No"));
+            lines.push("- Looks like a bug report or feature request? " + (body.length > 200 ? "Likely bug/long report" : "Short / unclear"));
+            lines.push("");
+            lines.push("*This comment was generated automatically by the repository triage workflow.*");
 
-            # const summary = lines.join("\n");
-            # core.setOutput("summary", summary);
+            const summary = lines.join("\n");
+            core.setOutput("summary", summary);
 
-            const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
-            setupGlobals(core, github, context, exec, io);
-            const { main } = require('/opt/gh-aw/actions/merge_remote_agent_github_folder.cjs');
-            await main();
+            # const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
+            # setupGlobals(core, github, context, exec, io);
+            # const { main } = require('/opt/gh-aw/actions/merge_remote_agent_github_folder.cjs');
+            # await main();
 
       - name: Post triage comment
         uses: actions/github-script@v7
@@ -135,7 +135,7 @@ jobs:
         with:
           script: |
             // Add a short final note so it's obvious the workflow completed.
-            const final = "Recommendation for Triage";
+            const final = ""
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
