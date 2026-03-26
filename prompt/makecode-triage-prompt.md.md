@@ -1,6 +1,6 @@
 # MakeCode Arcade Issue Triage
 
-Perform comprehensive triage for issue #${{ github.event.issue.number }} in the **microsoft/pxt-arcade** repository using the imported generic triage agent.
+Perform comprehensive triage for issue #${{ github.event.issue.number }} in the **DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs** repository using the imported generic triage agent.
 
 ## MakeCode Arcade Context
 
