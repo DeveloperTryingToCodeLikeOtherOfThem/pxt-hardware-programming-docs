@@ -71,6 +71,7 @@ When classifying issues, use these component labels:
 
 When searching for code, consider these common file patterns:
 
+# MakeCode Arcade
 **Arcade-specific files (pxt-arcade repo):**
 - `pxtarget.json` - Target configuration (released version)
 - `targetconfig.json` - Live configuration (served between releases)
@@ -91,6 +92,9 @@ When searching for code, consider these common file patterns:
 - `libs/screen/` - Display APIs
 - `sim/` - Shared simulator
 
+  # Microbit
+  // still working on this part
+
 ### MakeCode-Specific Considerations
 
 **Block Annotations:**
@@ -100,5 +104,3 @@ When searching for code, consider these common file patterns:
 **Multi-Repository Workspace:**
 - Changes may require coordination across repositories
 - File paths should specify which repository they're in
-
-  Adapted from pxt-arcade's prompt guide for making the github agent read the files.
