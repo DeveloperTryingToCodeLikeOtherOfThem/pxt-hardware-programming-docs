@@ -79,8 +79,8 @@ jobs:
             const title = issue.title || "(no title)";
             const body = issue.body || "(no body)";
 
-            # // Lightweight, deterministic "analysis" that you can replace with real AI later.
-            # // Create a short excerpt and a simple checklist of things to check.
+            // Lightweight, deterministic "analysis" that you can replace with real AI later.
+            // Create a short excerpt and a simple checklist of things to check.
             const excerpt = body.split("\n").slice(0, 10).join("\n").slice(0, 1200);
             const lines = [];
             lines.push("**Recommendation for Triage**");
@@ -100,10 +100,10 @@ jobs:
             const summary = lines.join("\n");
             core.setOutput("summary", summary);
 
-            # const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
-            # setupGlobals(core, github, context, exec, io);
-            # const { main } = require('/opt/gh-aw/actions/merge_remote_agent_github_folder.cjs');
-            # await main();
+            // const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
+            // setupGlobals(core, github, context, exec, io);
+            // const { main } = require('/opt/gh-aw/actions/merge_remote_agent_github_folder.cjs');
+            // await main();
 
       - name: Post triage comment
         uses: actions/github-script@v7
