@@ -1,4 +1,4 @@
-# MakeCode Arcade Issue Triage
+# PXT Issue Triage
 
 Perform comprehensive triage for issue #${{ github.event.issue.number }} in the **DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs** repository using the imported generic triage agent.
 
