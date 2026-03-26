@@ -2,7 +2,7 @@ If you did not know, there is a function in the runtime layer called **throwValu
 This function behaves the same way as the throw syntax, it is just a other way for using the
 function.
 
-Here is the shim for getting this function.
+Here is the shim for getting the function.
 
 `//% shim=pxt::throwValue` 
 
