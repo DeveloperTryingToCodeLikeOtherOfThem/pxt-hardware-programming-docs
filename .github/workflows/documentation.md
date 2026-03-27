@@ -1,7 +1,7 @@
 ---
 name: AI Documentation Check
 on:
-  pull_request:
+  issue:
     types: [labeled]
     names: [ai-doc-check]
 
