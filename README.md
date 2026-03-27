@@ -83,4 +83,4 @@ guide. This repository is for hardware and low level functions, not for using ga
 **Please know that filing issues is fine for every age, it is just the docummentations.
 You have permission to write issues, even if they are simple. But only the documentations
 are advanced. Asking questions can be anything related to confusion about how to diagnose 
-bugs and build an engine.
+bugs and build an engine.**
