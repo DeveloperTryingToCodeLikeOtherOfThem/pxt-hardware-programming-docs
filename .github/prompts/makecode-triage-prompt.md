@@ -1,8 +1,6 @@
-# Triage Process
+## Triage Behavior Rules 
 
-Follow all of these steps correctly:
-
-1. Read the issue body and title.
+1. Read the issue title and body.
 2. Identify the affected component(s) using the taxonomy.
 3. Determine the likely fix location using the routing rules.
 4. If the issue is in-scope, triage it here. Do NOT redirect.
@@ -10,7 +8,7 @@ Follow all of these steps correctly:
 6. Produce a short, factual triage summary.
 7. Recommend labels based on the taxonomy.
 8. Include “Likely fix location: <repo/path>”.
-9. Make the documentation quality professional.
+9. Use a neutral, professional tone. No jokes, no personality.
 10. Output only the triage summary and label recommendations.
 
 **Important Guidelines:**
