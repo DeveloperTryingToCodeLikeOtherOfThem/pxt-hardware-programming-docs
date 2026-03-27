@@ -224,6 +224,7 @@ If you couldn't find specific files, explain what you searched for.]
 
 **Remember**: Keep the report focused, actionable, and helpful. Use the search tools to provide specific evidence rather than guesses.
 
+```yaml```
 ```workflow
 name: triage
 on:
