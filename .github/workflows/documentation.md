@@ -1,7 +1,7 @@
 ---
 name: AI Documentation Check
 on:
-  issue:
+  issues:
     types: [labeled]
     names: [ai-doc-check]
 
