@@ -1,7 +1,7 @@
 ---
 name: AI Documentation Check
 on:
-  issues:
+  pull_request:
     types: [labeled]
     names: [ai-doc-check]
 
@@ -113,4 +113,4 @@ Use the `add-comment` safe output to post your findings to the PR.
 - Keep recommendations actionable and clear
 - Only analyze changes in this PR, not the entire codebase
 
-Please read files .github/prompts/makecode-triage.prompt.md and .github/agents/triage.agent.md for reading what else your job is to do.
+Please read files .github/prompts
