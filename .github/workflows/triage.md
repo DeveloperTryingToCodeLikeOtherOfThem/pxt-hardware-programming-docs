@@ -33,7 +33,7 @@ tools:
 
 imports:
  - ../agents/triage.agent.md
-  - ../prompts/makecode-triage.prompt.md
+ - ../prompts/makecode-triage.prompt.md
 timeout-minutes: 10
 ---
 
