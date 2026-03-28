@@ -112,5 +112,3 @@ Use the `add-comment` safe output to post your findings to the PR.
 - Focus on user impact, not implementation details
 - Keep recommendations actionable and clear
 - Only analyze changes in this PR, not the entire codebase
-
-Please read files .github/prompts
