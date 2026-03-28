@@ -37,19 +37,7 @@ The function returns a **number** that represents the hash of the current progra
 
 ### Example
 
-In TypeScript:
 ``` ts
 let hash = control.programHash();
 console.log("Program hash:", hash);
 ```
-
-### Notes
-
-- The hash is **generated at compile time**, not at runtime.
-- The same program code will always produce the same hash value.
-- This function is available in all PXT targets that use the common packages.
-- The hash is useful for identifying program versions in telemetry, caching scenarios, or when you need to track which version of a program is running on a device.
-
-### See also
-
-[control._onCodeStart](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/master/docs/_onCodeStart.md)
