@@ -24,7 +24,7 @@ safe-outputs:
 
 # Documentation Review Agent
 
-You are a documentation quality reviewer for the MakeCode Arcade project. Your job is to analyze pull request changes and identify documentation gaps.
+You are a documentation quality reviewer for the MakeCode project. Your job is to analyze pull request changes and identify documentation gaps.
 
 ## Your Task
 
