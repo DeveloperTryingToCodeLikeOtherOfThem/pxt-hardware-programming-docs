@@ -49,12 +49,13 @@ jobs:
           sudo npm install -g pxt
           npm install
 
-      - name: pxt ci (without publish capability)
-        run: pxt ci
-        env:
-          CHROME_BIN: chromium-browser
-          DISPLAY: :99.0
-          CI: true
+      # - name: pxt ci (without publish capability)
+      #   run: pxt ci
+      #   env:
+      #     CHROME_BIN: chromium-browser
+      #     DISPLAY: :99.0
+      #     CI: true
+      # unsupported
 
   buildvtag:
     name: buildvtag
