@@ -1,7 +1,7 @@
 ## History of Bytes 
-Bytes were **not** always 8 bits, there were 6 and 7 bits.
+Bytes were **not** always a group of 8 bits, there were more possiblities of bits.
 
-In the 1900s (**Early Computers**), the first known byte was grouped in 6 bits instead of 8 bits.
+Historically, the first known byte was grouped in 6 bits instead of 8 bits.
 
 Eventually, it grew to 7 bits, which made the range more efficient for 
 
