@@ -1,5 +1,5 @@
 ## Number Format
-The **Number Format** specifies the format's [number](https://github.com/microsoft/pxt-common-packages/types/number).
+The **Number Format** formats the size of a specificed number.
 ``` sig
    Buffer.sizeOfNumberFormat(NumberFormat.Int8LE);
 ```
