@@ -8,7 +8,7 @@ Here is an example of what blaming looks like.
  <img width="1326" height="402" alt="image" src="https://github.com/user-attachments/assets/5e8fa557-4d95-4cfa-88c2-5d285243722e" />
 **The thing that is right side of the profile is the text (the commit).**
 
-Be aware that **not** every blame might have additional information and 
+**Not** every blame might have additional information and 
 important info about the code, it could sometimes be simply titled "Create"
 or "Update."
 
