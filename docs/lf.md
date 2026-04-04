@@ -20,7 +20,3 @@ Here is the implementation of how it works under the hood.
     }
 
 ```
-
-
-**Warning**, this is NOT for MakeCode's PXT TypScript editor, it is for the abstraction level TypeScript, so please do **NOT** paste this
-code.
