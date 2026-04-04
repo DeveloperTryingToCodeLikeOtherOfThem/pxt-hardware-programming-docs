@@ -1,7 +1,7 @@
 ## Throw function
 
 The **throwValue** function throws a value similar to the throw syntax. The difference is that
-the throw value function is the core of the throw syntax for the MakeCode environment.
+the throw value function is the core of the throw syntax in the MakeCode environment.
 
 Here is the shim for getting the function.
 
