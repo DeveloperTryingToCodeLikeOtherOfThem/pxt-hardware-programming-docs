@@ -4,23 +4,35 @@ on:
   release:
     types: [released, edited]
 
+permissions:
+  contents: write
+
 jobs:
   sync-version:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # required so we can switch branches
+
+      - name: Detect default branch
+        id: branch
+        run: |
+          DEFAULT_BRANCH=$(git remote show origin | sed -n '/HEAD branch/s/.*: //p')
+          echo "branch=$DEFAULT_BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Switch to default branch
+        run: |
+          git checkout "${{ steps.branch.outputs.branch }}"
 
       - name: Extract release tag
         run: echo "RELEASE_TAG=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
 
       - name: Update package.json version
         run: |
-          TAG="${RELEASE_TAG#v}"   # remove leading "v"
+          TAG="${RELEASE_TAG#v}"
           echo "Updating version to $TAG"
           jq ".version = \"$TAG\"" package.json > package.tmp.json
           mv package.tmp.json package.json
@@ -29,6 +41,8 @@ jobs:
         run: |
           git config user.name "vTagBot"
           git config user.email "actions@github.com"
+
           git add package.json
           git commit -m "chore: sync version to $RELEASE_TAG" || echo "No changes to commit"
-          git push
+
+          git push origin "${{ steps.branch.outputs.branch }}"
