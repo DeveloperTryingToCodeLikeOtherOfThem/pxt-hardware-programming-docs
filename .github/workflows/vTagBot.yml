@@ -1,0 +1,34 @@
+name: "vTagBot"
+
+on:
+  release:
+    types: [released, edited]
+
+jobs:
+  sync-version:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract release tag
+        run: echo "RELEASE_TAG=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+      - name: Update package.json version
+        run: |
+          TAG="${RELEASE_TAG#v}"   # remove leading "v"
+          echo "Updating version to $TAG"
+          jq ".version = \"$TAG\"" package.json > package.tmp.json
+          mv package.tmp.json package.json
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "vTagBot"
+          git config user.email "actions@github.com"
+          git add package.json
+          git commit -m "chore: sync version to $RELEASE_TAG" || echo "No changes to commit"
+          git push
