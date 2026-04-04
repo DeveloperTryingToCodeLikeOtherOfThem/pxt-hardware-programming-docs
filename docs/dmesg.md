@@ -35,4 +35,4 @@ they are very similar.
 
 ## See also
 
-[Dmesg Performance Counters](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/master/docs/dmesgPerfCounters.md)
+[Dmesg Performance Counters](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/master/docs/reference/control/dmesgPerfCounters.md)
