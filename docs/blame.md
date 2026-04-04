@@ -9,7 +9,7 @@ Here is an example of what blaming looks like.
 **The thing that is right side of the profile is the text (the commit).**
 
 **Not** every blame might have important info about the 
-specific line of code, it could sometimes be simply titled "Create"
+specific line of code, it could sometimes be written as "Create"
 or "Update."
 
 If you want to learn more about blaming, you can look here. [Blaming](https://docs.gitlab.com/user/project/repository/files/git_blame/)
