@@ -1,8 +1,10 @@
-Blaming is something important, which allows you to see the commit history
-in specific lines on the code.
+Blaming is something important, which allows you to see commits in the file history, which
+are positioned in specific lines on the code.
 
-For example, if you are stuck on creating a sprite, look at the commit
-what it says for the specified function.
+For example, if you are stuck on creating a sprite, look at the line
+of code and the commit of the specified function.
 
 Here is an example of what blaming looks like.
  <img width="1326" height="402" alt="image" src="https://github.com/user-attachments/assets/5e8fa557-4d95-4cfa-88c2-5d285243722e" />
+
+If you want to learn more about blaming, you can look here. [Blaming](https://docs.gitlab.com/user/project/repository/files/git_blame/)
