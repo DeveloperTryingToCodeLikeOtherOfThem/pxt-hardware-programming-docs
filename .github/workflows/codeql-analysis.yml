@@ -52,7 +52,7 @@ jobs:
           # Ignore the monaco files in the scan
           paths-ignore:
             - docs/static/tutorial-tool/vs
-)
+
     - name: Autobuild
       uses: github/codeql-action/autobuild@v3
 
