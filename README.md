@@ -1,16 +1,5 @@
 ## What is this repository about
 
-for PXT
-
-This repository can be added as an **extension** in MakeCode.
-
-1. open https://arcade.makecode.com/, https://makecode.microbit.org/, or https://adafruit.makecode.com
-2. click on New Project
-3. click on Extensions under the gearwheel menu
-4. search for **https://github.com/developertryingtocodelikeotherofthem/pxt-hardware-programming-docs** and import
-
-**Warning**, this is unsupported and should **NOT** be imported because it is a real package.
- 
 This repository is meant for explaining how to code the engine in Microsoft MakeCode. This package does **NOT** connect to MakeCode's offical runtime docs, it is for local and to access the docs, you view the documentation here. 
 
 ## Support
