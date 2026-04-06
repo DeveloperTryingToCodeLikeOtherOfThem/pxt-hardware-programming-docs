@@ -24,7 +24,7 @@ are really recommended to really file issues in the PXT repositories are bugs in
 and someone in the team must fix the issue, like otherwise, write issues here.**
 
 ## Repository documentation level
-This repository has a level documentation for when it is recommended to be used.
+This repository has a level documentation for being used.
 If this is your first time understanding TypeScript, read MakeCode's documentation 
 guide. This repository is for hardware and low level functions, not for using game engines.
 **Please know that filing issues is permitted for every age, it is the documentations.
