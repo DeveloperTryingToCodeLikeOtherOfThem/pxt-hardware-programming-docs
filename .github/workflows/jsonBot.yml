@@ -1,0 +1,36 @@
+name: Generate Docs File List
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-file-list:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate file list
+        run: |
+          echo "Generating docs file list..."
+          FILES=$(find docs -type f ! -path "docs/static/*" | sed 's/^/"/;s/$/"/' | paste -sd "," -)
+          echo "Found files: $FILES"
+
+          # Insert into package.json
+          node - <<EOF
+          const fs = require('fs');
+          const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+          pkg.files = [${FILES}];
+          fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2));
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add package.json
+          git commit -m "Auto-update docs file list" || echo "No changes to commit"
+          git push
