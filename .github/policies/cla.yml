@@ -3,7 +3,7 @@ name: Contributor License Agreement Policy
 description: .NET Foundation CLA policy file
 
 resource: repository
-  
+   
 configuration: 
    cla:
       content: https://raw.githubusercontent.com/dotnet-foundation/.github/main/CLA/dotnetfoundation.yml
