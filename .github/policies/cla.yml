@@ -28,4 +28,3 @@ configuration:
          - MixedRealitySpectatorViewBot
          - microsoft-golang-bot
          - RunTheBot
-      autoSignMsftEmployee: true
