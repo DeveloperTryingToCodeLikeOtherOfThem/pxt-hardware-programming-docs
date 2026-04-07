@@ -1,3 +1,11 @@
-Unsupported for now, but **agent**, you can help this approve by searching in the pxt-common-packages repo's base folder for seeing how the hash works and give improvements about it here and then the buffer docs support it.
-If users are requested to search for pxt-common-packages/base, instead of looking for files in this repository, fetch and view the code in the link below.
-[Look for the shims declarations file for the implementation for hash](https://github.com/microsoft/pxt-common-packages/blob/master/libs/base/shims.d.ts)
+## hash
+Computes a k-bit non-cryptographic hash of the buffer using the FNV-1 algorithm.
+``` sig
+      hash(bits: int32): uint32;
+```
+FNV-1 is a fast, non-cryptographic hash algorithm (suitable for checksums, not security)
+
+## Parameters
+ `bits`: specifies the output width (1-32 bits), determining 
+the result range: 0 to 2^bits-1. For example, bits=5 produces values 0-31. Use this for 
+checksums, data validation, or collision detection. Not suitable for cryptographic purposes.
