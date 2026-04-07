@@ -92,8 +92,7 @@ workspace-root/
 
 ## Code Change Guidelines
 
-### Changes that belong in THIS repository (pxt-arcade):
-1. **Microbit-specific features**
+1. **Arcade-specific features**
    - Arcade-specific blocks or APIs in `libs/`. These tend to be specifically extensions, or overrides from the common game library features found in pxt-common-packages
    - Target configuration changes in `pxtarget.json` or `targetconfig.json`
        - `pxtarget.json` is the main target configuration file that defines the capabilities and features of the Arcade target. This is part of a released version of the application.
@@ -128,6 +127,7 @@ workspace-root/
    - Game loop modifications
    - Input handling that affects multiple targets
    - Hardware abstraction layers
+   - Low Level Abstractions for managing performance and fast calculations
 
 ## Development Workflow & Dependencies
 
@@ -268,6 +268,7 @@ When editing files, be aware of which repository they belong to:
 
 ### Key Workspace Files:
 - `arcade.code-workspace`: VSCode workspace configuration
+- `microbit.code-workspace`: VSCode workspace configuration
 - `setup.cmd`: Windows development environment setup script
 
 ## Coding Patterns and Best Practices
