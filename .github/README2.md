@@ -1,4 +1,4 @@
-# GitHub Copilot Configuration for MakeCode Arcade
+# GitHub Copilot Configuration for MakeCode 
 
 This directory contains GitHub Copilot configuration for the MakeCode Arcade multi-repository workspace.
 
