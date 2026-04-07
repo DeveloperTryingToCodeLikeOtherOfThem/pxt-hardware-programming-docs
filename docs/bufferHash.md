@@ -16,7 +16,7 @@ a [number](https://arcade.makecode.com/types/number) of k-bit non-cryptographic 
 ## Example
 Let us calculate the buffer's hash when the bits as 2 when the buffer's length is 30.
 ``` ts
-    const buf = Buffer.create(0);
+    const buf = Buffer.create(30);
     let hashValue = 0;
     if (buffer.length == 30) {
        hashValue = buffer.hash(2);
