@@ -50,6 +50,7 @@
     "docs/fixed_point.md",
     "docs/allocate.md",
     "docs/implementingAnIndexSignature.md",
+    "docs/bufferHash.md",
     "docs/helperAnnotation.md",
     "docs/numberFormat.md",
     "docs/monochrome.md",
