@@ -1,6 +1,7 @@
-## What is this repository about
-
-This repository is meant for explaining how to code the engine in Microsoft MakeCode. This package does **NOT** connect to MakeCode's offical runtime docs, it is for local and to access the docs, you view the documentation here. 
+## PXT Harware Programming Docs
+This repository is a package for more comprensive guides about [Microsoft MakeCode](https://makecode.com/) 
+This package does **not** connect to MakeCode's offical runtime docs, which is why I mentioned previously 
+what this repository is about.
 
 ## Support
 This extension **does not** work in any MakeCode editor because of the issues that were encountered in pxt.json. 
