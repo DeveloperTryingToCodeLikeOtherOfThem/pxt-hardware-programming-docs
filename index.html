@@ -20,7 +20,12 @@ fetch("README.md")
   .then(md => {
     document.getElementById("content").innerHTML = marked.parse(md);
   });
-  generateProfile();
+
+fetch("scripts/user.js")
+  .then(r => r.text())
+  .then(code => {
+    document.getElementById("content").textContent = code;
+  });
 </script> 
   </body>
 </html>
