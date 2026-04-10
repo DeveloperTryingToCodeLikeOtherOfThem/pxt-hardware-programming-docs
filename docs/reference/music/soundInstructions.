@@ -1,0 +1,21 @@
+## playInstructions
+ sends a buffer of encoded audio instructions to the audio engine and begins playback immediately.
+``` sig
+music.playInstructions(0, null);
+```
+The function does **not** allow normal buffers, a special type of buffer, which the encoding is in hex (hex`` for template).
+
+## Example
+Determines when the song is playing.
+
+``` ts
+    let songPlaying: boolean;
+    let buf = hex`3049309430940394034`
+
+    function enableSongPlaying(enable: boolean) {
+      songPlaying = enable;
+       if (enable) music.playInstructions(0, buf);
+    }
+
+   enableSongPlaying(true);
+````
