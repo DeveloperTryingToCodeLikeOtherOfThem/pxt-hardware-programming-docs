@@ -7,7 +7,7 @@ const OUTPUT_FILE = path.join(__dirname, "..", "docs-index.html");
 const RAW_BASE =
   "https://raw.githubusercontent.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/master/docs/";
 
-function generate() {
+function generate() { 
   const files = fs.readdirSync(DOCS_DIR)
     .filter(f => f.endsWith(".md"));
 
