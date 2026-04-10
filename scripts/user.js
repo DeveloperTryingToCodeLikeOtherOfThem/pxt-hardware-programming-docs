@@ -10,7 +10,7 @@ function createProfile() {
   .then(blob => {
     const imgURL = URL.createObjectURL(blob);
     const img = document.createElement("img");
-    img.src = imgURL;
+    img.src = imgURL; 
     document.body.appendChild(img);
   });
 }
