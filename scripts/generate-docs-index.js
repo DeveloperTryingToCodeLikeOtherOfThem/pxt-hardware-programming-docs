@@ -8,7 +8,7 @@ const RAW_BASE =
   "https://raw.githubusercontent.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/master/docs/";
 
 function generate() { 
-  const files = fs.readdirSync(DOCS_DIR)
+  const files = fs.readdirSync(DOCS_DIR) 
     .filter(f => f.endsWith(".md")); 
 
   const links = files.map(f => {
