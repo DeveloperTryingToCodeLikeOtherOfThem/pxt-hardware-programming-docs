@@ -2,7 +2,10 @@
 #include <string>
 
 int main() {
-    std::string url = "https://enablesmartspirit.blogspot.com/anything/here";
+    std::string url;
+
+    std::cout << "Enter a URL: ";
+    std::getline(std::cin, url);   // user can type any URL
 
     // Remove protocol (http:// or https://)
     std::string protocol = "https://";
@@ -10,7 +13,12 @@ int main() {
     if (start != std::string::npos) {
         start += protocol.length();
     } else {
-        start = 0; // no protocol found
+        protocol = "http://";
+        start = url.find(protocol);
+        if (start != std::string::npos)
+            start += protocol.length();
+        else
+            start = 0; // no protocol found
     }
 
     // Find the end of the domain
