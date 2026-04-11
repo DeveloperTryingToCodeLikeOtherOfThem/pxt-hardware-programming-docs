@@ -1,0 +1,49 @@
+name: Bot Investigation Log
+on:
+  schedule:
+    - cron: '0 */12 * * *' # Check every 12 hours
+  workflow_dispatch:      # Manual trigger
+
+jobs:
+  investigate:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write # Allows the Action to create issues
+    steps:
+      - name: Probe Hostile Node
+        id: probe
+        run: |
+          TARGET="https://enablesmartspirit.blogspot.com/"
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}" $TARGET)
+          echo "status=$STATUS" >> $GITHUB_OUTPUT
+
+      - name: Create Issue if Alive
+        if: steps.probe.outputs.status == '200'
+        uses: imjohnbo/github-action-issue@v2
+        with:
+          title: "⚠️ Evidence Detected: Bot Node Active"
+          body: |
+            ### Investigation Proof
+            The node `enablesmartspirit.blogspot.com` is currently **Online**.
+            - **Status Code:** 200
+            - **Timestamp:** ${{ github.event.repository.updated_at }}
+            
+            **Note:** Bot behaviors (loops/insults) remain active. Do not visit without protection.
+          labels: |
+            threat-detected
+            automated-report
+
+      - name: Create Issue if Deleted
+        if: steps.probe.outputs.status != '200'
+        uses: imjohnbo/github-action-issue@v2
+        with:
+          title: "🎉 Hooray: Node Offline"
+          body: |
+            ### Success Report
+            The website **does not exist** or has been taken down.
+            - **Status Code:** ${{ steps.probe.outputs.status }}
+            
+            The "goofy" botnet node has been successfully neutralized or moved.
+          labels: |
+            neutralized
+            investigation-complete
