@@ -1,33 +1,36 @@
 name: AI Bot Investigation
 on:
   schedule:
-    - cron: '0 */12 * * *' # Twice daily
-  workflow_dispatch:      # Manual trigger
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
 
 jobs:
   ai-inspect:
     runs-on: ubuntu-latest
     permissions:
       issues: write
-      contents: read
     steps:
-      - name: Install 2026 Copilot CLI
+      - name: Install Copilot CLI
         run: npm install -g @github/copilot
+
+      - name: Manual Source Grab
+        id: grabber
+        run: |
+          # Use curl to get the site source. If it's a 404, this will catch it.
+          TARGET="https://enablesmartspirit.blogspot.com/"
+          curl -s -L "$TARGET" > site_source.txt || echo "OFFLINE" > site_source.txt
           
-      - name: One-Shot Forensic Scan
-        id: scanner
+          # Check if the file is empty or 404
+          if [[ ! -s site_source.txt ]]; then echo "STATUS=404" >> $GITHUB_ENV; fi
+
+      - name: Copilot Forensic Analysis
+        if: env.STATUS != '404'
         env:
-          # In 2026, the CLI prioritizes this specific variable name
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_TOKEN }}
         run: |
-          TARGET="https://enablesmartspirit.blogspot.com/"
-          
-          # 2026 STRICT ONE-SHOT SYNTAX:
-          # --one-shot: Essential for Free Tier automation.
-          # --allow-tools: Gives the AI 'Search Warrant' for the URL.
-          # -p: The prompt text.
-          
-          REPORT=$(copilot --one-shot --allow-tools -p "Check if $TARGET exists. If yes, find 'AGC CSR' version. If 404, say '404'. Be extremely brief.")
+          # We PIPE the text into copilot so it doesn't have to 'search'
+          # This uses 0 'Premium Requests' because it's local analysis
+          REPORT=$(cat site_source.txt | copilot -p "Look at this HTML code. Is the 'AGC CSR' script here? What version? Respond in 1 sentence.")
           
           echo "REPORT_DATA<<EOF" >> $GITHUB_ENV
           echo "$REPORT" >> $GITHUB_ENV
@@ -37,10 +40,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [[ "$REPORT_DATA" == *"404"* ]]; then
-            gh issue create --title "🎉 Hooray: Bot Node Neutralized" \
-              --body "The tracker confirms the site is dead." --label "neutralized"
+          if [[ "$STATUS" == "404" ]]; then
+            gh issue create --title "🎉 Hooray: Node Neutralized" --body "Site is dead." --label "neutralized"
           else
-            gh issue create --title "⚠️ Warning: Bot Node Active" \
-              --body "Forensic Data: $REPORT_DATA" --label "threat-detected"
+            gh issue create --title "⚠️ Warning: Node Active" --body "Analysis: $REPORT_DATA" --label "threat-detected"
           fi
