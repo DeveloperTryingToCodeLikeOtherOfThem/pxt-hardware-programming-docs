@@ -1,49 +1,49 @@
-name: Bot Investigation Log
+name: AI Bot Investigation
 on:
   schedule:
-    - cron: '0 */12 * * *' # Check every 12 hours
+    - cron: '0 */12 * * *' # Every 12 hours
   workflow_dispatch:      # Manual trigger
 
 jobs:
-  investigate:
+  ai-inspect:
     runs-on: ubuntu-latest
     permissions:
-      issues: write # Allows the Action to create issues
+      issues: write
+      contents: read
     steps:
-      - name: Probe Hostile Node
-        id: probe
+      - name: Install Copilot CLI
         run: |
+          npm install -g @github/copilot
+          # Authenticate using the secret you set up
+          echo "${{ secrets.COPILOT_TOKEN }}" | gh auth login --with-token
+          
+      - name: Copilot Forensic Scan
+        id: scanner
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # We tell Copilot to inspect the site and output a summary
           TARGET="https://enablesmartspirit.blogspot.com/"
-          STATUS=$(curl -o /dev/null -s -w "%{http_code}" $TARGET)
-          echo "status=$STATUS" >> $GITHUB_OUTPUT
+          
+          # Copilot 'read' command analyzes the URL context safely
+          REPORT=$(copilot explain "Analyze $TARGET. Is the 'AGC CSR' script present? What is the version? Respond only with the data or '404' if dead.")
+          
+          echo "REPORT_DATA=$REPORT" >> $GITHUB_ENV
 
-      - name: Create Issue if Alive
-        if: steps.probe.outputs.status == '200'
-        uses: imjohnbo/github-action-issue@v2
-        with:
-          title: "⚠️ Evidence Detected: Bot Node Active"
-          body: |
-            ### Investigation Proof
-            The node `enablesmartspirit.blogspot.com` is currently **Online**.
-            - **Status Code:** 200
-            - **Timestamp:** ${{ github.event.repository.updated_at }}
-            
-            **Note:** Bot behaviors (loops/insults) remain active. Do not visit without protection.
-          labels: |
-            threat-detected
-            automated-report
-
-      - name: Create Issue if Deleted
-        if: steps.probe.outputs.status != '200'
-        uses: imjohnbo/github-action-issue@v2
-        with:
-          title: "🎉 Hooray: Node Offline"
-          body: |
-            ### Success Report
-            The website **does not exist** or has been taken down.
-            - **Status Code:** ${{ steps.probe.outputs.status }}
-            
-            The "goofy" botnet node has been successfully neutralized or moved.
-          labels: |
-            neutralized
-            investigation-complete
+      - name: Log Findings to Private Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [[ "$REPORT_DATA" == *"404"* ]]; then
+            gh issue create --title "🎉 Hooray: This domain does not exist." \
+              --body "Copilot reports that $TARGET is no longer reachable. Investigation complete." \
+              --label "neutralized"
+          else
+            gh issue create --title "⚠️ Warning: This domain exists and do not click it." \
+              --body "### Copilot Forensic Report
+              **Target:** enablesmartspirit.blogspot.com
+              **Analysis:** $REPORT_DATA
+              
+              *Automated log created via GitHub Copilot CLI.*" \
+              --label "threat-detected"
+          fi
