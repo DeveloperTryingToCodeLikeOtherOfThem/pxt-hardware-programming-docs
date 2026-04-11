@@ -1,5 +1,5 @@
 <img width="1272" height="217" alt="image" src="https://github.com/user-attachments/assets/6d2c73ea-5457-40bd-aef0-5414ace395f7" />
-``` js
+``` ts
 
  document.addEventListener(&#39;DOMContentLoaded&#39;, function(event) {
       window.cookieChoices &amp;&amp; cookieChoices.showCookieConsentBar &amp;&amp; cookieChoices.showCookieConsentBar(
