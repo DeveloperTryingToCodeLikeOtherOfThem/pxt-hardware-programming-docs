@@ -1,7 +1,6 @@
 <img width="907" height="68" alt="image" src="https://github.com/user-attachments/assets/65d9a9ac-067c-48df-adf9-ecfa8551205a" />
 
 ``` html
- <link crossorigin="" href="https://ehpdsfzrqsxgwi9vl8s23wi8sxv27lelokvxd1vw.apibrainly.my.id" rel="preconnect" />
     <link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109" />
