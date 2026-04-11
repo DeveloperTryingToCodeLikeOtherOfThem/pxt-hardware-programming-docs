@@ -1,20 +1,2 @@
 ## isMono
-an image that **must** contain exactly **one** color.
-``` sig
-  image.create(null, null).isMono
-```
-## Returns
-a boolean which returns true if the image is exactly **one** color. The boolean expression is false if these 2 colors do **not** exist.
-
-## Example
-Create a custom image detecting if the image has black and white, it logs into the console's serial output. Otherwise it throws an error.
-``` ts
-    const customImage = image.create(160, 120);
-    customImage.setPixel(5, 5, 1);
-    customImage.setPixel(15, 15, 15);
-    if (customImage.isMono) {
-       console.log("Your Image Is Valid");
-    } else {
-       throw "Error: This Image is Invalid";
-    }
-```
+**This feature is unsupported for MakeCode Arcade. It is able to be used for anyone who has access to the abstraction layer that implements the BPP function under the hood. Because of this, it is basically not possible to use, at least for now.**
