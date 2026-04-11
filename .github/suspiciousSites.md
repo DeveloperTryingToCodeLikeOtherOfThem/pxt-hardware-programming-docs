@@ -23,4 +23,4 @@ https://www.facebook.com/groups/csragc
 Pelanggaran menyebaркап акun beserta seturun domain dibannepi
 ```
 
-**If you ever see any website looks like this, exit out immediately, it is **not** safe to view.
+**If you ever see any website looks like this, exit out immediately, it is **not** safe to view.**
