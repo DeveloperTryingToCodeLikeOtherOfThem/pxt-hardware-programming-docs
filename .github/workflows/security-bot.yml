@@ -17,7 +17,7 @@ jobs:
       - name: Ensure Labels Exist
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: "DeveloperTryingToCodeLikeOtherOfThem/workflow-testing"
+          REPO: "DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs"
         run: |
           # 2026 FIX: Force-create the labels so the 'gh issue' command doesn't crash
           gh label create "neutralized" --color "0E8A16" --description "Target is 404/Offline" --repo "$REPO" --force || true
