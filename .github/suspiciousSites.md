@@ -65,4 +65,44 @@
 
 ```
 
+``` js
+ scriptJob.text = JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "JobPosting",
+            "title": job?.title,
+            "description": plainDescription,
+            "datePosted": job?.date_posted,
+            "validThrough": job?.valid_through,
+            "employmentType": job?.employment_type,
+            "hiringOrganization": {
+                "@type": "Organization",
+                "name": job?.hiring_organization?.name,
+                "sameAs": job?.hiring_organization?.same_as,
+                "logo": job?.hiring_organization?.logo
+            },
+            "jobLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": job?.job_location?.address?.street_address,
+                    "addressLocality": job?.job_location?.address?.address_locality,
+                    "addressRegion": job?.job_location?.address?.address_region,
+                    "postalCode": job?.job_location?.address?.postal_code,
+                    "addressCountry": job?.job_location?.address?.address_country
+                }
+            },
+            "baseSalary": {
+                "@type": "MonetaryAmount",
+                "currency": job?.base_salary?.currency,
+                "value": {
+                    "@type": "QuantitativeValue",
+                    "minValue": job?.base_salary?.value?.min_value,
+                    "maxValue": job?.base_salary?.value?.max_value,
+                    "unitText": job?.base_salary?.value?.unit_text
+                }
+            }
+        });
+        document.head.appendChild(scriptJob);
+```
+
 **If you ever encountered any website have this structure, exit out immediately.**
