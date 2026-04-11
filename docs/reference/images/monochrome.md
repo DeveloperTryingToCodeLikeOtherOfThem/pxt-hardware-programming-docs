@@ -1,0 +1,16 @@
+## isMono
+a single color (hue) used in an image or display, where all pixels are variations of that hue. If the image is black and white, it is true. Otherwise, it is false.
+
+## Returns
+a boolean which returns true if the image is black and white. The boolean expression is false if these 2 colors do **not** exist.
+
+## Example
+Create a custom image detecting if the image has black and white, it logs into the console's serial output. Otherwise it throws an error.
+``` ts
+    const customImage = image.create(160, 120);
+    if (customImage.isMono) {
+       console.log("Your Image Is Valid")
+    } else {
+       throw "Error: This Image is Invalid"
+    }
+```
