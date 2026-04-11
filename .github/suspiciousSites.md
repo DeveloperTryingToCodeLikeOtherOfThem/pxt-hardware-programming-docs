@@ -105,7 +105,7 @@
         document.head.appendChild(scriptJob);
 ```
 
-``` js
+``` html
         let dom_answer_card = "";
         let isFirst = true;
         for (let answer of (data?.data_content?.data?.answers?.nodes || [])) {
@@ -143,7 +143,20 @@
           </div>
           <div class="answer-content" itemprop="text">
             ${answer?.content || ""}
+```
 
+``` html
+     <div class="answer-rating">
+              ${isFirst ? `<span class="best-answer-badge"><i class="fas fa-check-circle"></i> {{Jawaban Terbaik}}</span>` : ""}
+              <div class="rating-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span class="rating-count">(<span itemprop="upvoteCount">${answer?.content?.length || 0}</span>)</span>
+              </div>
+            </div>
+          </div>
+          <div class="answer-content" itemprop="text">
+            ${answer?.content || ""}
 ```
 
 **If you ever encountered any website have this structure, exit out immediately.**
