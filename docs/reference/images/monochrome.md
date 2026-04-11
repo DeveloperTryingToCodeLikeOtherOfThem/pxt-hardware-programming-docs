@@ -3,10 +3,8 @@ an image that **must** contain exactly **one** color.
 ``` sig
   image.create(null, null).isMono
 ```
-The image **must** contain only 1 color filled in the whole image, or otherwise it also returns false.
-
 ## Returns
-a boolean which returns true if the image is black and white. The boolean expression is false if these 2 colors do **not** exist.
+a boolean which returns true if the image is exactly **one** color. The boolean expression is false if these 2 colors do **not** exist.
 
 ## Example
 Create a custom image detecting if the image has black and white, it logs into the console's serial output. Otherwise it throws an error.
