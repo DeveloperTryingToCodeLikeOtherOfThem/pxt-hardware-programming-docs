@@ -12,23 +12,23 @@ jobs:
       contents: read
     steps:
       - name: Install Copilot CLI
-        run: |
-          npm install -g @github/copilot
-          # Authenticate using the secret you set up
-          echo "${{ secrets.COPILOT_TOKEN }}" | gh auth login --with-token
+        run: npm install -g @github/copilot
           
       - name: Copilot Forensic Scan
         id: scanner
         env:
-          # In 2026, COPILOT_GITHUB_TOKEN is the required variable for CLI Agents
+          # Use the specific token variable the CLI looks for in 2026
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TARGET="https://enablesmartspirit.blogspot.com/"
           
-          # Use -p for the prompt and --allow-all to bypass interactive tool approvals
-          # The -s flag makes the output "Silent" (no extra AI fluff, just the data)
-          REPORT=$(copilot -p "Analyze the source code of $TARGET. Is the 'AGC CSR' script present? What is the version? If the site is a 404, respond ONLY with 'DELETED'." --allow-all -s)
+          # 1. Use 'copilot' directly.
+          # 2. Use -p followed immediately by the prompt.
+          # 3. Use --allow-all to prevent the 'Do you trust this folder?' prompt.
+          # 4. Use -s (silent) to get just the raw data for your report.
+          
+          REPORT=$(copilot -p "Analyze the source code of $TARGET. Is the 'AGC CSR' script present? What is the version? If the site is a 404, respond ONLY with '404'." --allow-all -s)
           
           echo "REPORT_DATA<<EOF" >> $GITHUB_ENV
           echo "$REPORT" >> $GITHUB_ENV
