@@ -8,9 +8,11 @@ a boolean which returns true if the image is black and white. The boolean expres
 Create a custom image detecting if the image has black and white, it logs into the console's serial output. Otherwise it throws an error.
 ``` ts
     const customImage = image.create(160, 120);
+    customImage.setPixel(5, 5, 1);
+    customImage.setPixel(15, 15, 15);
     if (customImage.isMono) {
-       console.log("Your Image Is Valid")
+       console.log("Your Image Is Valid");
     } else {
-       throw "Error: This Image is Invalid"
+       throw "Error: This Image is Invalid";
     }
 ```
