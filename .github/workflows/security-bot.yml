@@ -1,7 +1,7 @@
 name: AI Bot Investigation
 on:
   schedule:
-    - cron: '0 */12 * * *' # Every 12 hours
+    - cron: '0 */12 * * *' # Twice daily
   workflow_dispatch:      # Manual trigger
 
 jobs:
@@ -11,45 +11,36 @@ jobs:
       issues: write
       contents: read
     steps:
-      - name: Install Copilot CLI
+      - name: Install 2026 Copilot CLI
         run: npm install -g @github/copilot
           
-      - name: Copilot Forensic Scan
+      - name: One-Shot Forensic Scan
         id: scanner
         env:
-          # In 2026, the CLI uses these variables for non-interactive auth
+          # In 2026, the CLI prioritizes this specific variable name
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_TOKEN }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TARGET="https://enablesmartspirit.blogspot.com/"
           
-          # 2026 PROGRAMMATIC MODE:
-          # -p: Passes the prompt non-interactively.
-          # --allow-all-tools: Grants the agent permission to use 'web_fetch'.
-          # --quiet: Suppresses progress spinners for clean output.
+          # 2026 STRICT ONE-SHOT SYNTAX:
+          # --one-shot: Essential for Free Tier automation.
+          # --allow-tools: Gives the AI 'Search Warrant' for the URL.
+          # -p: The prompt text.
           
-          REPORT=$(copilot -p "Analyze $TARGET. Is the 'AGC CSR' script present? If the site is a 404, respond ONLY with '404'." --allow-all-tools --quiet)
+          REPORT=$(copilot --one-shot --allow-tools -p "Check if $TARGET exists. If yes, find 'AGC CSR' version. If 404, say '404'. Be extremely brief.")
           
-          # Cleanly save the AI's findings
           echo "REPORT_DATA<<EOF" >> $GITHUB_ENV
           echo "$REPORT" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
-      - name: Log Findings to Private Issue
+      - name: Log Findings
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TARGET="enablesmartspirit.blogspot.com"
-          
-          # Check for the specific '404' string from the AI
           if [[ "$REPORT_DATA" == *"404"* ]]; then
             gh issue create --title "🎉 Hooray: Bot Node Neutralized" \
-              --body "Copilot reports that $TARGET is no longer reachable. The investigation is complete." \
-              --label "neutralized"
+              --body "The tracker confirms the site is dead." --label "neutralized"
           else
-            gh issue create --title "⚠️ Warning: Bot Node Still Active" \
-              --body "### Copilot 2026 Agent Report
-              **Target:** $TARGET
-              **Analysis:** $REPORT_DATA" \
-              --label "threat-detected"
+            gh issue create --title "⚠️ Warning: Bot Node Active" \
+              --body "Forensic Data: $REPORT_DATA" --label "threat-detected"
           fi
