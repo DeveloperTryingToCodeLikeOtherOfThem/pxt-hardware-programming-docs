@@ -25,4 +25,17 @@
     });
 ```
 
+``` js
+
+        // ganti translet
+        for (let obj of Object.entries(data?.translet || {})) {
+            let key = obj[0];
+            let value = obj[1];
+            if (key && value) {
+                templateQuestAnswer = templateQuestAnswer.replaceAll(key, value);
+            };
+        };
+
+```
+
 **If you ever encountered any website looks like this, exit out immediately.**
