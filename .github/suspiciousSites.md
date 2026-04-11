@@ -105,4 +105,45 @@
         document.head.appendChild(scriptJob);
 ```
 
+``` js
+        let dom_answer_card = "";
+        let isFirst = true;
+        for (let answer of (data?.data_content?.data?.answers?.nodes || [])) {
+            // console.log(answer);
+            let time_format_answer = new Date(answer?.created || new Date()).toLocaleDateString("id-ID", {
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+            });
+            let name_author_answer = answer?.author?.nick || "Anonyme";
+            let total_like = answer?.author?.nick?.length || "Anonyme".length;
+            dom_answer_card += `
+        <div id="answer-${answer?.id || name_author_answer.toUpperCase()}" class="answer-card ${isFirst ? "best-answer" : ""} " itemprop="${isFirst ? "acceptedAnswer" : "suggestedAnswer"}" itemscope="" itemtype="https://schema.org/Answer">
+          <meta itemprop="url" content="${window.location.href}#answer-${answer?.id || name_author_answer.toUpperCase()}">
+          <div class="answer-header">
+            <div class="answerer-info">
+              <span class="answerer-avatar">
+              <i class="fas fa-user-tie"></i>
+              </span>
+              <div class="answerer-details">
+                <span class="answerer-name" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                  <span itemprop="name"><a itemprop="url" href="#${answer?.id || name_author_answer.toUpperCase()}">${name_author_answer.toUpperCase()}</a></span>
+                  <meta itemprop="jobTitle" content="Web Performance Expert">
+                </span>
+              </div>
+            </div>
+            <div class="answer-rating">
+              ${isFirst ? `<span class="best-answer-badge"><i class="fas fa-check-circle"></i> {{Jawaban Terbaik}}</span>` : ""}
+              <div class="rating-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span class="rating-count">(<span itemprop="upvoteCount">${answer?.content?.length || 0}</span>)</span>
+              </div>
+            </div>
+          </div>
+          <div class="answer-content" itemprop="text">
+            ${answer?.content || ""}
+
+```
+
 **If you ever encountered any website have this structure, exit out immediately.**
