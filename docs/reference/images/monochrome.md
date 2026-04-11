@@ -1,5 +1,9 @@
 ## isMono
 a single color (hue) used in an image or display, where all pixels are variations of that hue. If the image is black and white, it is true. Otherwise, it is false.
+``` sig
+  image.create(null, null).isMono
+```
+The image **must** contain only 1 color filled in the whole image, or otherwise it also returns false.
 
 ## Returns
 a boolean which returns true if the image is black and white. The boolean expression is false if these 2 colors do **not** exist.
