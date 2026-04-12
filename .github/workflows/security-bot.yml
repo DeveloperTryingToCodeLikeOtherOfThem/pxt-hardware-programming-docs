@@ -39,7 +39,6 @@ jobs:
               body: "Generated automatically."
             })
           env:
-          PAGE: ${{ steps.extract.outputs.page }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
        
             
