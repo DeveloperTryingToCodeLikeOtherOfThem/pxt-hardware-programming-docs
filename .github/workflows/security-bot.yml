@@ -29,6 +29,18 @@ jobs:
             You are offically allowed to see anything else is happening inside this website, not specifically only this 
             one page of the site, but entirely what else inside these sites have and are safe or not.
             In the end, please write the topic's name and what things are happening in that site.
+            If you cannot view the site, do this step here.
+
+            
+            HTML for Blogger Link 1.  https://enablesmartspirit.blogspot.com/ 
+            2. HTML for smart wisdom https://smart-wisdom-ro.netlify.app/
+            Site 1:
+            HTML ${{ steps.fetch.outputs.site1 }}
+
+            Site 2:
+            HTML for smart wisdom ${{ steps.fetch.outputs.site2 }}
+
+            Then answer these questions and give the file name and allow users to download it.
             
       - name: Comment Problem
         uses: actions/github-script@v7
