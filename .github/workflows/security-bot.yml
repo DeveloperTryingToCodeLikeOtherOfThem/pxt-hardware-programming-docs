@@ -1,7 +1,7 @@
 name: "Security Bot"
 
 on:
-  workflow_dispatch:    # Allows you to click "Run" whenever you want
+  workflow_dispatch:    # Triggers anytime any collaborators in this repository clicks run
 
 jobs:
   suspicious-bot:
@@ -49,7 +49,7 @@ jobs:
            github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Title: ${process.env.PAGE}`,
+              title: `Title: Agent Summary,
               body: process.env.RESPONSE
             })
         env:
