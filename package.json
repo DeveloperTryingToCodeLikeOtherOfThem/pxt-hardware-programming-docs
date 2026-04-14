@@ -35,6 +35,7 @@
     "docs/reference/control/programHash.md",
     "docs/reference/control/dmesgPerfCounters.md",
     "docs/reference/control/_onCodeStop.md",
+    "docs/reference/control/__log.md",
     "docs/reference/control/gc.md",
     "docs/reference/game/currentScene.md",
     "docs/reference/game/popScene.md",
