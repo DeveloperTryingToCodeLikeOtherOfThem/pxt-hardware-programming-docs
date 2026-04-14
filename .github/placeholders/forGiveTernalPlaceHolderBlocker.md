@@ -1,6 +1,10 @@
-- [**Warning**: Do **NOT** click this site, this is a fallback placefolder that is made to prevent any other suspicious activity has been copied in this repository.](https://forgiveeternal.com/dnmx5q1j7x?key=e6e1a72de1805c4a9cc897135931cfd9)
+``` js
+   async function botExists() {
+      const script = `<span class="asker-name">{{Ditanyakan oleh}}: <span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name"><a itemprop="url" href="#${data?.data_content?.data?.id || author_name.toUpperCase()}">${author_name.toUpperCase()}</a></span></span></span>
+                      </div>`
+return script;
+   }
+```
 
-We are super sorry that this placeholder is here, it will eventually be gone when I found a way to fix this problem here.
-As mentioned previously, I am finding ways to fix the problem.
 
 *Placeholder created by [DeveloperTryingToCodeLikeOtherOfThem](https://github.com/DeveloperTryingToCodeLikeOtherOfThem)*
