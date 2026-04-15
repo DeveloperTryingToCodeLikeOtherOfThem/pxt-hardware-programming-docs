@@ -52,6 +52,7 @@
     "docs/panic.md",
     "docs/auto-fill-sample.md",
     "docs/internal_properties.md",
+    "docs/developers/implOfProgramName.md",
     "docs/statementsVsExpressions.md",
     "docs/_getFactoryInstance.md",
     "docs/globalThis.md",
