@@ -10,9 +10,9 @@ PXT.
 
 are **not** supported.
 
-Do **not** be confused because the filter for showing that
-it is a module for this global property does **not** exist,
-it is the monaco editor and the JavaScript compiler doing that.
+Do **not** be confused because the filter for showing
+it is a module, which does **not** exist.
+Because of this, it is the monaco editor and the JavaScript compiler doing that.
 
 Here is an image of the conflict that happened.
 
