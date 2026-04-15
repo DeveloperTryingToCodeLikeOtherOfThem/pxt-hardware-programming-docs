@@ -10,9 +10,9 @@ PXT.
 
 are **not** supported.
 
-Do **not** be confused because the filter for showing
+The filter for showing
 it is a module, which does **not** exist.
-Because of this, it is the monaco editor and the JavaScript compiler doing that.
+The monaco editor and the JavaScript compiler doing that.
 
 Here is an image of the conflict that happened.
 
