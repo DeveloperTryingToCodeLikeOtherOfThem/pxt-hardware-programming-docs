@@ -17,4 +17,4 @@ P1: Simple
 P2: Medium
 P3: High
 
-**Note: If no information is provided, return with "⚠️ needs more additional information"
+**If no information is provided, return with "⚠️ needs additional information"**
