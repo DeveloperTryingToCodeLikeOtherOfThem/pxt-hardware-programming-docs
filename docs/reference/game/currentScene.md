@@ -2,7 +2,7 @@
 
 Manages scenes in the game. The current scene is the active scene that is running currently.
 The scene contains its own data representations, including sprites, backgrounds, event handlers, and more.
-The stack is handled by the built-in engine, not your code.
+The stack is handled by the built-in engine. Useful for extensions and engines for managing states in the scene.
 
 
  ``` sig
