@@ -11,6 +11,7 @@ TypeScript: ``` ts
    }
 
 C++: ``` cpp
+  
    void pxtrt::panic(int code) {
      soft_panic(code); // because this is a high level panic function, it calls the safe normal panic, not a hard crash panic
    }
