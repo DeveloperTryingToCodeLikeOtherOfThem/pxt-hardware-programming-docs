@@ -1,13 +1,12 @@
 # Localize Format
 LF is short for localize format, which marks the string so MakeCode's
-translation system can extract it and translate it into other languages.
+translation system can extract it and translate into other languages.
 
 ## Implementation
 
-Here is the implementation of how it works under the hood.
-
+The implementation looks like this under the hood.
 ``` ts
-   export function lf(s: string, ...args: any[]): string { // @ignorelf@
+    function lf(s: string, ...args: any[]): string { // @ignorelf@
         let lfmt = _localizeStrings[s] || s;
 
         if (!sForPlural && lfmt != s && /\d:s\}/.test(lfmt)) {
