@@ -15,4 +15,4 @@ Offset: The zero-based byte position within the buffer.
 
 ## See Also
 [Buffers](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/master/docs/buffers.md)
-[Set Number](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/edit/master/docs/setNumber.md)
+[Set Number](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/master/docs/reference/buffer/setNumber.md)
