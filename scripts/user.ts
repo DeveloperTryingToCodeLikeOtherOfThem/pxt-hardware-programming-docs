@@ -15,7 +15,7 @@ function createProfile() {
   });
 }
 
-namespace Math {
+ namespace Math {
    export function randomRange(min: number, max: number): number {
             if (min == max) return min;
             if (min > max) {
