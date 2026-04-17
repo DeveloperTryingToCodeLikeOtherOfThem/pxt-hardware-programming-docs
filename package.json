@@ -40,6 +40,7 @@
     "docs/reference/game/currentScene.md",
     "docs/reference/game/popScene.md",
     "docs/reference/game/pushScene.md",
+    "docs/reference/buffer/bufferList.md",
     "docs/reference/core/pxtbase.h.md",
     "docs/reference/images/monochrome.md",
     "docs/reference/music/soundInstructions.md",
@@ -92,7 +93,6 @@
     "docs/assertion_failure.md",
     "docs/js/pxtJSDocumentation.md",
     "docs/allocate.md",
-    "docs/buffers.md",
     "docs/unary.md",
     "docs/dump.md"
   ],
