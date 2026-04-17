@@ -14,7 +14,7 @@ checksums, data validation, or collision detection. Not suitable for cryptograph
 a [number](https://arcade.makecode.com/types/number) of k-bit non-cryptographic hash.
 
 ## Example
-Let us calculate the buffer's hash when the bits as 2 when the buffer's length is 30.
+Let us calculate the buffer's hash the bits as 2 when the buffer's length is 30.
 ``` ts
     const buf = Buffer.create(30);
     let hashValue = 0;
