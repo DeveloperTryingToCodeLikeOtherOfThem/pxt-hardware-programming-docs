@@ -1,6 +1,7 @@
-# Buffers in MakeCode Arcade
+# Buffer List
+
+A list of members exposed in the Buffer namespace and interface.
  
- In Microsoft MakeCode Arcade, the Buffer namespace is a core namespace designed for storing data precisely.  
 
  A **Buffer** is a **fixed size array of bytes (8 bits)** which allocates a new buffer. It is also stored in **contiguous memory**. The difference between arrays and buffers come down to a fact of **precision**. Use **Buffers** for a fixed size array of bytes, but use **Arrays** for dynamic data types (numbers, strings, booleans, etc.) Arrays are **dynamic** (of a process or system)
  
@@ -21,13 +22,7 @@ Binary math came to use electricity because engineers realized electrical switch
 The person who created the boolean system is [Gottfried Wilhelm Leibniz](https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz).
 The other person who created boolean alegebra is [Georg Boole](https://en.wikipedia.org/wiki/George_Boole).
 
-## Little Endian (LE) and Big Endian (BE)
-Little Endian groups bytes by the least significant byte at the lowest address.
-Big Endian stores the most significant byte at the lowest address, it is meant for human readability.
- 
-## Methods
-    
- 
+## Methods and Properties
 
 * The Buffer.create(size: number) method stores bytes in a fixed size of memory.   
 
