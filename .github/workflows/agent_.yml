@@ -43,7 +43,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const body = `### 🔍 Automated Search Results\n${steps.search.outputs.message}`;
+            const body = `### 🔍 Automated Search Results\n${process.env.SEARCH_MESSAGE}`;
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -53,3 +53,4 @@ jobs:
 
         env:
           token: ${{ secrets.GITHUB_TOKEN }}
+          SEARCH_MESSAGE: ${{ steps.search.outputs.message }}
