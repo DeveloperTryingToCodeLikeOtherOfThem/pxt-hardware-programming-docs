@@ -17,7 +17,6 @@
   },
   "files": [
     "docs/soft_panic.md",
-    "docs/bufIndexOf.md",
     "docs/limit_of_offsets_for_setNumber.md",
     "docs/buffers_vs_arrays.md",
     "docs/bpp.md",
@@ -52,6 +51,7 @@
     "docs/how-to-download-files-in-makecode.md",
     "docs/bytes.md",
     "docs/panic.md",
+    "docs/buffer/indexOf.md",
     "docs/auto-fill-sample.md",
     "docs/internal_properties.md",
     "docs/developers/implOfProgramName.md",
