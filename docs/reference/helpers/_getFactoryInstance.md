@@ -1,11 +1,11 @@
 ## _getFactoryInstance
-Gets a factory instance. Useful for registing templates.
+Gets an asset by name. Useful for registering templates.
 ``` sig
 helpers._getFactoryInstance(null, null);
 ```
 
 ## Returns 
-A factory instance for a given data type.
+an asset for a given data type.
 
 ## Example
 Let us make a rendered imaage template.
