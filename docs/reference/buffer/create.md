@@ -1,5 +1,5 @@
 ## create
-allocates a new buffer in a fixed size of [bytes](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/master/docs/bytes.md).
+Allocates a new buffer in a fixed size of [bytes](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/master/docs/bytes.md).
 ``` sig
  Buffer.create(null);
 ```
