@@ -1,4 +1,4 @@
-## Implementation of the Warning Banners
+## Warning Banners Implementation
 The implementation of the warning banners are implemented in few steps, which first are implemented in the `pushNotificationMessage` function.
 The function then pushes a new message into the stack and renders it.
 
