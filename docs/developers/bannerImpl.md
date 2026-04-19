@@ -15,13 +15,15 @@ export function pushNotificationMessage(options: NotificationOptions): void {
 ```
 [pushNotificationMessage Implementation](https://github.com/microsoft/pxt/blob/master/skillmap/src/lib/notifications.ts#L7-L9) 
 
-It then processes into the warning notification function, which gets passed by pushNotificationMessage. And then all these steps get executed by `showNotificationMsg`.  Finally, these functions then are called in `errorNotification` and `warningNotification.`
-
+It then processes into the warning notification function, which gets passed by pushNotificationMessage. 
 ``` ts
 function showNotificationMsg(kind: string, msg: string) {
     pushNotificationMessage({ kind: kind, text: msg, hc: false }); // No high contrast support in skillmap
 }
+```
+And then all these steps get executed by `showNotificationMsg`.  Finally, these functions then are called in `errorNotification` and `warningNotification.`
 
+``` ts
 export function errorNotification(msg: string) {
     pxt.tickEvent("notification.error", { message: msg })
     debugger // trigger a breakpoint when a debugger is connected, like in U.oops()
