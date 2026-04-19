@@ -9,7 +9,8 @@ Here is the shim path.
 
 There is a `control.assert` function, but it is different and more limited compared to this function.
 
-Here is a snippet showing it correctly.
+## Declaration
+The declaration behaves like this when writing the script.
 
 ``` ts
     //% shim=pxt::getThrownValue
