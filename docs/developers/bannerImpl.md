@@ -12,6 +12,7 @@ export function pushNotificationMessage(options: NotificationOptions): void {
     } else if (notificationMessages) {
         notificationMessages.push(options);
     }
+}
 ```
 [pushNotificationMessage Implementation](https://github.com/microsoft/pxt/blob/master/skillmap/src/lib/notifications.ts#L7-L9) 
 
