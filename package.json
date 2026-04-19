@@ -60,6 +60,7 @@
     "docs/internal_properties.md",
     "docs/localizeFormat.md",
     "docs/developers/implOfProgramName.md",
+    "docs/developers/bannerImpl.md",
     "docs/developers/beADeveloper.md",
     "docs/developers/implOfSceneStacks.md",
     "docs/developers/toolboxImpl.md",
