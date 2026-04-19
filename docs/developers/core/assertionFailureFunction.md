@@ -1,3 +1,4 @@
+## Assert Failure Function
 The assertion failure function is a function that checks if the condition is true.
 The function is **not** exported in any PXT platform, instead you have to use a shim to access
 this function.
