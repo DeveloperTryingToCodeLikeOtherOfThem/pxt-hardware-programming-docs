@@ -1,5 +1,5 @@
 ## Buffer
-The `Buffer` object is used to represent a contiguous block of memory
+The **`Buffer`** object is used to represent a contiguous block of memory
 
 ## Description
 
