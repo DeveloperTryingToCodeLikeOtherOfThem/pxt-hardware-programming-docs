@@ -1,6 +1,9 @@
 ## removeScenePushHandler
 Removes a scene push handler.
 
+## Parameters
+handler: the code that runs
+
 ## Example
 Remove a new sprite when the handler is removed.
 ``` ts
