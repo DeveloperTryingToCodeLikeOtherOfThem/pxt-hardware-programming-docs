@@ -1,6 +1,9 @@
 ## addScenePushHandler
 Registers a handler that runs whenever a scene is pushed onto the scene stack.
 
+## Parameters
+handler: the code that will run
+
 ## Example
 Add a new sprite when the handler is registered.
 ``` ts
