@@ -30,8 +30,3 @@ for storing data without overflowing.
   the FNV-1 algorithm. 
 
 * The Buffer.length property returns the total area of the buffer
-
-## See Also
-
-[Get Number](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/master/docs/getNumber.md)
-[Set Number](https://github.com/DeveloperTryingToCodeLikeOtherOfThem/pxt-hardware-programming-docs/blob/master/docs/setNumber.md)
