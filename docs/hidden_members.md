@@ -1,7 +1,6 @@
 ## Hidden Members That Can Be Accessed 
 
-There are many hidden members that already exist in the builtin packages. See the list below for understanding
-how you can access these properties. **I am not showing all hidden properties and methods, just a few**
+There are many hidden members that already exist in the builtin packages. 
 
 Here is a list of properties and methods that can be accessed, but have an underscore to make them hidden.
 
