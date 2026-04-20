@@ -1,7 +1,13 @@
-# Buffer List
-A list of members exposed in the Buffer namespace and interface.
- 
-## Buffer Members
+## Buffer
+The `Buffer` object is used to represent a contiguous block of memory
+
+## Description
+
+Buffers are useful for managing memory.
+They are useful for having enough space
+for storing data, while having limits.
+
+## Members
 
 * The Buffer.create(size: number) method stores bytes in a fixed size of memory.   
 
