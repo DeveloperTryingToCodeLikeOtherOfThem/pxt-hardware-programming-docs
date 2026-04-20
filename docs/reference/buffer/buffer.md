@@ -52,4 +52,4 @@ for storing data without overflowing.
 ## Properties
   Buffer.length 
   
-  returns total length of buffer
+  returns the total length of buffer
