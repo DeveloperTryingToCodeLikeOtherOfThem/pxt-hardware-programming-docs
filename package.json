@@ -27,6 +27,7 @@
     "docs/dmesg.md",
     "docs/cpp/accessMembersInANS.md",
     "docs/reference/control/programName.md",
+    "docs/reference/control/setDebugFlags.md",
     "docs/reference/control/_onCodeStart.md",
     "docs/reference/control/benchmark.md",
     "docs/reference/control/programHash.md",
