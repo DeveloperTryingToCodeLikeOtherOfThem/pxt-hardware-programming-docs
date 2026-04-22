@@ -1,6 +1,6 @@
 ## Soft Panic
 
- The soft panic is the internal way of triggering a panic (`control.panic(code: number)`).
+ The soft panic is a panic, which internally triggers the high level panic (`control.panic(code: number)`).
 
 ``` cpp
     void pxtrt::panic(int code) {
