@@ -3,7 +3,7 @@ Log the debugger's debug flags.
 ``` sig
    control.setDebugFlags(null);
 ```
-It is logged to the browser's DevTools.
+It is logged to the browser's DevTools. 
 
 ## Parameters
 **flags:** the debugger's flags
