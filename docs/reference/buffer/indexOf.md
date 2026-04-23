@@ -4,7 +4,7 @@ A sequence of raw bytes that searches through those bytes.
 
 ## Returns
 *  a number which is the postion in the buffer where the element is found. This number
-   is -1 if a matching element is not found anywhere in the array. The index of the first matching byte
+   is -1 if a matching element is not found anywhere in the array. 
 
 ## Example
 ``` ts 
