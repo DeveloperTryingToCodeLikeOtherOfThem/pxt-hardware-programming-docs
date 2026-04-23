@@ -1,8 +1,5 @@
-## Buffer
-The `Buffer` object is used to represent a contiguous block of memory of bytes.
-
 ## Methods
-
+ 
  Buffer.create(size: number)
  
  allocates a new buffer in fixed size of memory.   
