@@ -82,7 +82,7 @@
     "docs/cache.md",
     "docs/reading_rendered_help_sources.md",
     "docs/units/bytes.md",
-    "docs/binary.md",
+    "docs/units/binary.md",
     "docs/helpers.md",
     "docs/raw_infinite_for_loops.md",
     "docs/fixedArray.md",
