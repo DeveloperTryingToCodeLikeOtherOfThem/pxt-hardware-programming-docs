@@ -1,5 +1,5 @@
 ## Operators Implementation
-The implementation of the operators (+, -, *, /, ==, ===, !=, !==, &&, ||, !) are implemented in the [decompiler](https://github.com/microsoft/pxt/blob/master/pxtcompiler/emitter/decompiler.ts).
+The implementation of the blockly operators (+, -, *, /, ==, ===, !=, !==, &&, ||, !) are implemented in the [decompiler](https://github.com/microsoft/pxt/blob/master/pxtcompiler/emitter/decompiler.ts).
 They are implemented by using a map, which includes the type of the operator and where it belongs:
 ``` ts
     const ops: pxt.Map<{ type: string; op?: string; leftName?: string; rightName?: string }> = {
