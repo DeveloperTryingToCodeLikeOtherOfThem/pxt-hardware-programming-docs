@@ -68,6 +68,7 @@
     "docs/developers/core/localizeFormat.md",
     "docs/developers/core/assertionFailureFunction.md",
     "docs/developers/core/throwFunction.md",
+    "docs/developers/core/implOfOperators.md",
     "docs/developers/bannerImpl.md",
     "docs/developers/beADeveloper.md",
     "docs/developers/implOfSceneStacks.md",
