@@ -1,5 +1,5 @@
 ## playInstructions
- sends a buffer of encoded audio instructions to the audio engine and begins playback immediately.
+ sends a buffer of encoded audio instructions to the audio engine and begins a playback immediately.
 ``` sig
 music.playInstructions(0, null);
 ```
