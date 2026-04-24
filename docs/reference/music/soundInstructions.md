@@ -13,7 +13,7 @@ Determines when the song is playing.
     let buf = hex`
     01 00 64 32 10 00
     01 00 50 20 08 00
-`
+    `
 
     function enableSongPlaying(enable: boolean) {
       songPlaying = enable;
