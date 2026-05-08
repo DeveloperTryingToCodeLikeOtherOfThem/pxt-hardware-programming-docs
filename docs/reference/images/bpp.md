@@ -1,4 +1,4 @@
-## BPP in MakeCode Arcade
+## BPP 
 
 **BPP**, short for Bits Per Pixel, represent how many possible color values are for that one pixel. For example, 
 if there are 16 colors in the palette editor, there are 4 bits per pixel are required because 2⁴ = 16. That is why
