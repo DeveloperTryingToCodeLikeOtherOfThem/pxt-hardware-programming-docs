@@ -1,3 +1,5 @@
-## Fixed Point in MakeCode Arcade 
+## Fixed Point 
 
-Fixed point is a numeric format that specifies how many fractional bits after the binary point. Microsoft MakeCode Arcade uses 8 bits after the decimal point because the engine needs sub-pixel movement, performance, and memory. THe other thing fixed point does really store the fractional number into an interger.
+Fixed point is a numeric format that specifies how many fractional bits after the binary point. 
+
+Targets that use fixed point include Microsoft MakeCode Arcade, which uses 8 bits after the decimal point. 
