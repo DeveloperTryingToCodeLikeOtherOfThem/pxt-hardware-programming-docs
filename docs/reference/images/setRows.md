@@ -10,11 +10,9 @@ Sets rows using a buffer.
 * **src:** the **raw data**  of image.
 
 ## Example
-Fill the screen in dark blue. 
+Fill the screen's background color in dark blue. 
 ``` ts
     const buf = Buffer.create(160 * 120);
-    const fillImg = image.create(160, 120);
     buf.fill(8);
-    fillImg.setRows(0, buf);
-    fillImg.drawImage(fillImg, 0, 0);
+    scene.backgroundImage().setRows(0, buf);
 ````
