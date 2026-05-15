@@ -5,7 +5,7 @@ Sets rows using a buffer.
 ```
 
 ## Parameters
-**x: ** the starting offset of the buffer
+**x:** the starting offset of the buffer
 **src:** The **raw data**  of image.
 
 ## Example
